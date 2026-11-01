@@ -1,8 +1,0 @@
-# Cloudflare Pages project config.
-# The KV binding name MUST be EMAILS (the subscribe function reads env.EMAILS).
-name = "cryptoidiot"
-pages_build_output_dir = "."
-
-kv_namespaces = [
-  { binding = "EMAILS", id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID" }
-]
