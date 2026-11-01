@@ -75,7 +75,7 @@ function articlePage(slug, fm, html) {
 ${html}
 
     <div class="article-nav">
-      <a href="/#learn">← All guides</a>
+      <a href="/blog/">← All posts</a>
       ${navNext}
     </div>
   </article>
@@ -105,10 +105,82 @@ for (const file of files) {
   console.log("built blog/" + slug + ".html");
 }
 
+// --- blog/index.html: auto-generated listing of all posts ---
+function blogIndexPage(sorted) {
+  const cards = sorted.map((p) => `        <article class="post-card">
+          <span class="post-tag">${esc(p.fm.tag)}</span>
+          <h4><a href="${p.slug}.html">${esc(p.fm.heading || p.fm.title)}</a></h4>
+          <p>${esc(p.fm.description)}</p>
+          <span class="post-meta">${esc(p.fm.date)} · ${esc(p.fm.readtime)}</span>
+        </article>`).join("\n");
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Guides | Crypto Idiot</title>
+  <meta name="description" content="Every Crypto Idiot guide in one place — plain-English crypto explainers for absolute beginners." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${GA_ID}');
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <span class="post-tag">All guides</span>
+      <h1>Everything we've explained so far</h1>
+      <p class="article-meta">New posts added regularly — no jargon, no hype.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+${cards}
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
+`;
+}
+
+const sorted = posts.slice().sort((a, b) => String(b.fm.date).localeCompare(String(a.fm.date)));
+await writeFile(OUT + "index.html", blogIndexPage(sorted));
+console.log("built blog/index.html (" + sorted.length + " posts)");
+
 // --- sitemap.xml + robots.txt ---
 const today = new Date().toISOString().slice(0, 10);
 const urls = [
   { loc: SITE + "/", lastmod: today, priority: "1.0" },
+  { loc: SITE + "/blog/", lastmod: today, priority: "0.9" },
   ...posts
     .sort((a, b) => String(a.fm.date).localeCompare(String(b.fm.date)))
     .map((p) => ({
