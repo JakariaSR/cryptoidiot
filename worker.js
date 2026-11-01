@@ -1,16 +1,22 @@
-// Newsletter subscribe endpoint — runs as a Cloudflare Pages Function.
-// Stores each email in a KV namespace bound as EMAILS.
-//
-// Setup (one time, in Cloudflare):
-//   1. Workers & Pages → KV → Create namespace, e.g. "cryptoidiot-emails"
-//   2. Pages → your project → Settings → Functions → KV namespace bindings
-//      → Variable name: EMAILS → Namespace: cryptoidiot-emails
-//
-// View/export subscribers later:
-//   Dashboard → KV → cryptoidiot-emails  (key = email, value = subscribed-at)
+// Worker entry: serves static assets from [assets] (dist/) and handles /api/* routes.
+// Newsletter emails are stored in a KV namespace bound as EMAILS.
 
-export async function onRequestPost(context) {
-  const { request, env } = context;
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+
+    if (url.pathname === "/api/subscribe") {
+      return handleSubscribe(request, env);
+    }
+
+    // Everything else → static site (dist/)
+    return env.ASSETS.fetch(request);
+  },
+};
+
+async function handleSubscribe(request, env) {
+  if (request.method === "OPTIONS") return new Response(null, { status: 204 });
+  if (request.method !== "POST") return json({ ok: false, error: "Method not allowed." }, 405);
 
   let body;
   try {
@@ -39,14 +45,10 @@ export async function onRequestPost(context) {
   await env.EMAILS.put(email, JSON.stringify({
     email,
     subscribedAt: new Date().toISOString(),
-    source: "cryptoidiot.com"
+    source: "cryptoidiot.com",
   }));
 
   return json({ ok: true, message: "You're on the list! Welcome aboard. 🚀" });
-}
-
-export async function onRequestOptions() {
-  return new Response(null, { status: 204 });
 }
 
 function json(data, status = 200) {

@@ -1,7 +1,7 @@
 // Build script: turns Markdown posts in blog-src/ into styled HTML pages,
 // and regenerates sitemap.xml + robots.txt.
 // Run on every deploy: Cloudflare Pages build command = "npm run build"
-import { readdir, readFile, writeFile, mkdir, rm } from "node:fs/promises";
+import { readdir, readFile, writeFile, mkdir, rm, cp } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { marked } from "marked";
 
@@ -132,3 +132,16 @@ Sitemap: ${SITE}/sitemap.xml
 await writeFile(ROOT + "robots.txt", robots);
 
 console.log("built sitemap.xml (" + urls.length + " urls) and robots.txt");
+
+// --- dist/ output for Worker static assets ([assets] directory = "dist") ---
+const DIST = ROOT + "dist/";
+await rm(DIST, { recursive: true, force: true });
+await mkdir(DIST, { recursive: true });
+for (const item of ["index.html", "sitemap.xml", "robots.txt", "css", "js", "blog", "admin", "images"]) {
+  try {
+    await cp(ROOT + item, DIST + item, { recursive: true });
+  } catch {
+    // optional item (e.g. images/) may not exist yet
+  }
+}
+console.log("built dist/ for Worker deploy");
