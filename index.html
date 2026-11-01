@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Idiot — Crypto Tools & Plain-English Guides for Beginners</title>
+  <meta name="description" content="Free crypto tools (price converter, DCA calculator, halving countdown, fear & greed index) and beginner-friendly guides. No jargon, no hype — just crypto explained like you're smart." />
+  <meta property="og:title" content="Crypto Idiot — Crypto for Absolute Beginners" />
+  <meta property="og:description" content="Free crypto tools and plain-English guides. Start here, thank us later." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#tools">Tools</a>
+        <a href="#learn">Learn</a>
+        <a href="#blog">Blog</a>
+        <a href="#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="hero-badge">Built for beginners. Loved by the curious.</p>
+      <h1>Everyone's a crypto idiot <span class="accent">at first.</span></h1>
+      <p class="hero-sub">
+        Free tools, live data, and guides written in actual human English.
+        No jargon, no "wen moon", no sketchy signals — just the stuff you
+        actually need to stop feeling lost.
+      </p>
+      <div class="hero-actions">
+        <a href="#tools" class="btn btn-primary">Try the Free Tools</a>
+        <a href="#learn" class="btn btn-ghost">Read the Beginner Guides</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" id="statTools">7</span><span class="stat-label">free tools</span></div>
+        <div class="stat"><span class="stat-num">$0</span><span class="stat-label">forever, no signup</span></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">plain English</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live ticker -->
+  <div class="ticker" aria-label="Live crypto prices">
+    <div class="ticker-track" id="tickerTrack">
+      <span class="ticker-loading">Loading live prices…</span>
+    </div>
+  </div>
+
+  <!-- Tools -->
+  <section class="section" id="tools">
+    <div class="container">
+      <h2 class="section-title">Free Tools <span class="accent">— no account needed</span></h2>
+      <p class="section-sub">Click a tool, use it instantly. That's the whole business model (there isn't one).</p>
+
+      <div class="tool-grid">
+
+        <!-- Converter -->
+        <article class="tool-card" id="tool-converter">
+          <h3>💱 Crypto Converter</h3>
+          <p class="tool-desc">How much is 0.05 BTC in actual money? Find out in one second.</p>
+          <div class="converter">
+            <div class="conv-row">
+              <input type="number" id="convAmount" value="1" min="0" step="any" aria-label="Amount" />
+              <select id="convCoin" aria-label="Cryptocurrency">
+                <option value="bitcoin">BTC</option>
+                <option value="ethereum">ETH</option>
+                <option value="solana">SOL</option>
+                <option value="binancecoin">BNB</option>
+                <option value="ripple">XRP</option>
+                <option value="dogecoin">DOGE</option>
+                <option value="cardano">ADA</option>
+                <option value="litecoin">LTC</option>
+              </select>
+            </div>
+            <div class="conv-swap">=</div>
+            <div class="conv-row">
+              <input type="text" id="convResult" readonly aria-label="Result" />
+              <select id="convFiat" aria-label="Fiat currency">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="bdt">BDT</option>
+                <option value="inr">INR</option>
+              </select>
+            </div>
+            <p class="tool-note" id="convNote">Live rates via CoinGecko.</p>
+          </div>
+        </article>
+
+        <!-- DCA Calculator -->
+        <article class="tool-card" id="tool-dca">
+          <h3>📈 DCA Calculator</h3>
+          <p class="tool-desc">"What if I bought $50 of Bitcoin every week?" Let's find out.</p>
+          <div class="dca">
+            <label>Amount per purchase ($)
+              <input type="number" id="dcaAmount" value="50" min="1" step="any" />
+            </label>
+            <label>How often?
+              <select id="dcaFreq">
+                <option value="7">Weekly</option>
+                <option value="30">Monthly</option>
+                <option value="1">Daily</option>
+              </select>
+            </label>
+            <label>Time period (months)
+              <input type="number" id="dcaMonths" value="12" min="1" max="120" />
+            </label>
+            <label>Expected annual growth (%)
+              <input type="number" id="dcaGrowth" value="10" min="-50" max="100" step="any" />
+            </label>
+            <button class="btn btn-primary btn-block" id="dcaCalc">Calculate</button>
+            <div class="dca-result" id="dcaResult" hidden>
+              <div class="dca-stat"><span>Total invested</span><strong id="dcaInvested"></strong></div>
+              <div class="dca-stat"><span>Estimated value</span><strong id="dcaValue"></strong></div>
+              <div class="dca-stat"><span>Growth</span><strong id="dcaGrowthOut"></strong></div>
+              <p class="tool-note">Estimation only — past growth says nothing about the future. Not financial advice.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Halving countdown -->
+        <article class="tool-card" id="tool-halving">
+          <h3>⏳ Bitcoin Halving Countdown</h3>
+          <p class="tool-desc">The supply cut that happens roughly every 4 years. Next one: 2028.</p>
+          <div class="countdown" id="halvingCountdown">
+            <div class="cd-unit"><span class="cd-num" id="cdDays">—</span><span class="cd-label">days</span></div>
+            <div class="cd-unit"><span class="cd-num" id="cdHours">—</span><span class="cd-label">hours</span></div>
+            <div class="cd-unit"><span class="cd-num" id="cdMins">—</span><span class="cd-label">min</span></div>
+            <div class="cd-unit"><span class="cd-num" id="cdSecs">—</span><span class="cd-label">sec</span></div>
+          </div>
+          <p class="tool-note" id="halvingNote">Estimated: April 2028 (block 1,050,000). Scarcity goes up, new supply goes down — that's the whole point.</p>
+        </article>
+
+        <!-- Fear & Greed -->
+        <article class="tool-card" id="tool-fng">
+          <h3>🎭 Fear & Greed Index</h3>
+          <p class="tool-desc">Is the market panicking or being greedy? One number tells the mood.</p>
+          <div class="fng" id="fngBox">
+            <div class="fng-gauge">
+              <svg viewBox="0 0 200 110" class="fng-svg">
+                <path d="M10 100 A90 90 0 0 1 190 100" fill="none" stroke="#2a2f3a" stroke-width="16" stroke-linecap="round"/>
+                <path id="fngArc" d="M10 100 A90 90 0 0 1 190 100" fill="none" stroke="url(#fngGrad)" stroke-width="16" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="283"/>
+                <defs>
+                  <linearGradient id="fngGrad">
+                    <stop offset="0%" stop-color="#ef4444"/>
+                    <stop offset="50%" stop-color="#f59e0b"/>
+                    <stop offset="100%" stop-color="#22c55e"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="fng-value" id="fngValue">—</div>
+            </div>
+            <p class="fng-label" id="fngLabel">Loading…</p>
+            <p class="tool-note">Updated daily. Extreme fear often means people are selling in panic; extreme greed often means the opposite. Historically, boring consistency beats emotional timing.</p>
+          </div>
+        </article>
+
+        <!-- Sats Converter -->
+        <article class="tool-card" id="tool-sats">
+          <h3>🪙 Sats Converter</h3>
+          <p class="tool-desc">Bitcoin is divisible into 100 million "satoshis". Learn to think in sats.</p>
+          <div class="converter">
+            <div class="conv-row">
+              <input type="number" id="satsAmount" value="1" min="0" step="any" aria-label="Amount" />
+              <select id="satsFrom" aria-label="Convert from">
+                <option value="btc">BTC</option>
+                <option value="sats">Sats</option>
+              </select>
+            </div>
+            <div class="conv-swap">=</div>
+            <div class="conv-row">
+              <input type="text" id="satsResult" readonly aria-label="Result" />
+              <input type="text" value="SATS" readonly class="conv-fixed" aria-label="Unit" id="satsUnit" />
+            </div>
+            <p class="tool-note" id="satsNote">1 BTC = 100,000,000 sats. Many people find it easier to stack sats than to own 0.001 BTC.</p>
+          </div>
+        </article>
+
+        <!-- ETH Unit Converter -->
+        <article class="tool-card" id="tool-ethunits">
+          <h3>⚡ ETH Unit Converter</h3>
+          <p class="tool-desc">Gas fees are quoted in gwei. But what's a gwei? Now you know.</p>
+          <div class="converter">
+            <div class="conv-row">
+              <input type="number" id="ethAmount" value="1" min="0" step="any" aria-label="Amount" />
+              <select id="ethFrom" aria-label="Convert from">
+                <option value="eth">Ether</option>
+                <option value="gwei">Gwei</option>
+                <option value="wei">Wei</option>
+              </select>
+            </div>
+            <div class="conv-swap">=</div>
+            <div class="conv-row">
+              <input type="text" id="ethResult" readonly aria-label="Result" />
+              <select id="ethTo" aria-label="Convert to">
+                <option value="gwei">Gwei</option>
+                <option value="wei">Wei</option>
+                <option value="eth">Ether</option>
+              </select>
+            </div>
+            <p class="tool-note">1 Ether = 1,000,000,000 Gwei = 1,000,000,000,000,000,000 Wei. Named after Wei Dai, who proposed an early idea for digital money.</p>
+          </div>
+        </article>
+
+        <!-- Profit/Loss Calculator -->
+        <article class="tool-card" id="tool-pl">
+          <h3>💰 Profit / Loss Calculator</h3>
+          <p class="tool-desc">Bought some, sold some (or holding)? See exactly where you stand.</p>
+          <div class="dca">
+            <label>Amount invested ($)
+              <input type="number" id="plInvested" value="100" min="0" step="any" />
+            </label>
+            <label>Buy price ($)
+              <input type="number" id="plBuy" value="50000" min="0" step="any" />
+            </label>
+            <label>Sell / current price ($)
+              <input type="number" id="plSell" value="60000" min="0" step="any" />
+            </label>
+            <button class="btn btn-primary btn-block" id="plCalc">Calculate</button>
+            <div class="dca-result" id="plResult" hidden>
+              <div class="dca-stat"><span>Coins bought</span><strong id="plCoins"></strong></div>
+              <div class="dca-stat"><span>Current value</span><strong id="plValue"></strong></div>
+              <div class="dca-stat"><span>Profit / loss</span><strong id="plPnl"></strong></div>
+              <p class="tool-note">Doesn't include exchange fees or taxes — real life is slightly less kind.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Learn / Start here -->
+  <section class="section section-alt" id="learn">
+    <div class="container">
+      <h2 class="section-title">Start here <span class="accent">— zero to not-idiot</span></h2>
+      <p class="section-sub">The 20% of knowledge that prevents 80% of beginner mistakes.</p>
+      <div class="learn-grid">
+        <a class="learn-card" href="blog/what-is-a-crypto-wallet.html">
+          <span class="learn-icon">🔐</span>
+          <h4>What Is a Crypto Wallet?</h4>
+          <p>Hot vs. cold, seed phrases, and why "not your keys, not your coins" matters.</p>
+        </a>
+        <a class="learn-card" href="blog/how-to-buy-your-first-crypto.html">
+          <span class="learn-icon">🪙</span>
+          <h4>How to Buy Your First Crypto</h4>
+          <p>Exchanges, fees, and the exact first-buy checklist — step by step.</p>
+        </a>
+        <a class="learn-card" href="blog/common-crypto-scams.html">
+          <span class="learn-icon">🚨</span>
+          <h4>5 Scams That Target Beginners</h4>
+          <p>If it promises guaranteed returns, it's a scam. Here's how the rest work too.</p>
+        </a>
+        <a class="learn-card" href="blog/what-is-dca.html">
+          <span class="learn-icon">🧮</span>
+          <h4>What Is DCA?</h4>
+          <p>The boring strategy that beats panic buying and panic selling for most people.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog preview -->
+  <section class="section" id="blog">
+    <div class="container">
+      <h2 class="section-title">From the blog</h2>
+      <div class="blog-grid">
+        <article class="post-card">
+          <span class="post-tag">Beginner</span>
+          <h4><a href="blog/what-is-a-crypto-wallet.html">What Is a Crypto Wallet? (Explained Like You're Smart)</a></h4>
+          <p>A wallet doesn't store coins — it stores keys. That one sentence will save you hours of confusion…</p>
+          <span class="post-meta">5 min read</span>
+        </article>
+        <article class="post-card">
+          <span class="post-tag">Guide</span>
+          <h4><a href="blog/how-to-buy-your-first-crypto.html">How to Buy Your First Crypto in 2026: Step by Step</a></h4>
+          <p>From picking an exchange to your first $20 purchase — the exact checklist, minus the hype…</p>
+          <span class="post-meta">8 min read</span>
+        </article>
+        <article class="post-card">
+          <span class="post-tag">Safety</span>
+          <h4><a href="blog/common-crypto-scams.html">5 Crypto Scams That Specifically Target Beginners</a></h4>
+          <p>Fake giveaways, romance scams, "guaranteed yield" — how they work and how to spot them in seconds…</p>
+          <span class="post-meta">6 min read</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section section-alt" id="newsletter">
+    <div class="container newsletter-inner">
+      <h2 class="section-title">Get the <span class="accent">No-Jargon Weekly</span></h2>
+      <p class="section-sub">One email a week: what happened in crypto, what it actually means, zero shilling.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" id="nlEmail" name="email" placeholder="you@example.com" required aria-label="Email address" />
+        <button type="submit" class="btn btn-primary" id="nlBtn">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" id="nlMsg"></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+        <p class="footer-note">Crypto tools & guides for absolute beginners.<br/>Not financial advice. Obviously.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#tools">Tools</a>
+        <a href="#learn">Learn</a>
+        <a href="#blog">Blog</a>
+        <a href="#newsletter">Newsletter</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 CryptoIdiot.com — Everyone starts somewhere.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

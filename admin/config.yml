@@ -1,0 +1,34 @@
+# Decap CMS configuration for cryptoidiot.com
+# Edit the repo line below after setup: YOUR_GITHUB_USERNAME → your GitHub username.
+
+backend:
+  name: github
+  repo: JakariaSR/cryptoidiot
+  branch: main
+  base_url: https://cryptoidiot.com
+  auth_endpoint: api/auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "blog-src"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title (browser tab + SEO)", name: "title", widget: "string" }
+      - { label: "Description (Google snippet)", name: "description", widget: "text" }
+      - label: "Tag"
+        name: "tag"
+        widget: "select"
+        options: ["Beginner", "Guide", "Safety", "Strategy"]
+        default: "Beginner"
+      - { label: "Read time", name: "readtime", widget: "string", default: "5 min read" }
+      - { label: "Publish date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+      - { label: "Next guide title (optional)", name: "next_title", widget: "string", required: false }
+      - { label: "Next guide URL (optional)", name: "next_url", widget: "string", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
