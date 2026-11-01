@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Profit/Loss Calculator — Free P&amp;L Tool | Crypto Idiot</title>
+  <meta name="description" content="Free crypto profit and loss calculator. Enter your investment, buy price and sell price to instantly see your P&amp;L in dollars and percentage." />
+  <link rel="canonical" href="https://cryptoidiot.com/tools/profit-loss-calculator.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How is crypto profit calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Profit = (sell price − buy price) × number of coins. Our calculator derives the coin count from your investment and buy price, then applies the same formula."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the calculator include fees and taxes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — it shows the raw profit. Real-world returns are reduced by exchange fees, withdrawal fees and (depending on your country) capital gains tax."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I bought at different prices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For multiple purchases at different prices, you'd calculate the average buy price first (a DCA calculator handles that scenario better), then plug the average into this tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does percentage matter more than dollars?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Percentage normalizes for position size — a $100 gain means very different things on a $200 investment versus a $20,000 one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this tool free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — it runs entirely in your browser, with no signup and no data stored anywhere."
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"><span class="ticker-loading">Loading live prices…</span></div>
+  </div>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Crypto Profit / Loss Calculator</h1>
+      <p class="article-meta">Know exactly where your trade stands</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p>"Am I actually up or down?" It's the most common question in crypto, and the answer isn't obvious when you buy at different prices over time. For a simple buy-and-sell (or buy-and-hold), this calculator gives you the exact numbers in seconds.</p>
+    <p>Enter what you invested, the price you bought at, and the price you sold at (or today's price), and see your coins, current value and profit or loss — in dollars and percentage.</p>
+
+    <div class="tool-card tool-page-widget">
+      <div class="dca">
+            <label>Amount invested ($)
+              <input type="number" id="plInvested" value="100" min="0" step="any" />
+            </label>
+            <label>Buy price ($)
+              <input type="number" id="plBuy" value="50000" min="0" step="any" />
+            </label>
+            <label>Sell / current price ($)
+              <input type="number" id="plSell" value="60000" min="0" step="any" />
+            </label>
+            <button class="btn btn-primary btn-block" id="plCalc">Calculate</button>
+            <div class="dca-result" id="plResult" hidden>
+              <div class="dca-stat"><span>Coins bought</span><strong id="plCoins"></strong></div>
+              <div class="dca-stat"><span>Current value</span><strong id="plValue"></strong></div>
+              <div class="dca-stat"><span>Profit / loss</span><strong id="plPnl"></strong></div>
+            </div>
+          </div>
+    </div>
+
+    <h2>How to use this tool</h2>
+    <ol>
+      <li>Enter the total amount you invested in dollars.</li>
+      <li>Enter the price per coin when you bought.</li>
+      <li>Enter the price per coin when you sold — or the current price if you&#39;re still holding.</li>
+      <li>Click Calculate to see coins bought, current value and profit/loss.</li>
+    </ol>
+
+    <div class="callout">📖 <a href="/blog/what-is-dca.html" style="color:var(--accent)">Bought in multiple chunks? Read: What Is DCA?</a></div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+        <details>
+          <summary>How is crypto profit calculated?</summary>
+          <p>Profit = (sell price − buy price) × number of coins. Our calculator derives the coin count from your investment and buy price, then applies the same formula.</p>
+        </details>
+        <details>
+          <summary>Does the calculator include fees and taxes?</summary>
+          <p>No — it shows the raw profit. Real-world returns are reduced by exchange fees, withdrawal fees and (depending on your country) capital gains tax.</p>
+        </details>
+        <details>
+          <summary>What if I bought at different prices?</summary>
+          <p>For multiple purchases at different prices, you&#39;d calculate the average buy price first (a DCA calculator handles that scenario better), then plug the average into this tool.</p>
+        </details>
+        <details>
+          <summary>Why does percentage matter more than dollars?</summary>
+          <p>Percentage normalizes for position size — a $100 gain means very different things on a $200 investment versus a $20,000 one.</p>
+        </details>
+        <details>
+          <summary>Is this tool free?</summary>
+          <p>Yes — it runs entirely in your browser, with no signup and no data stored anywhere.</p>
+        </details>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

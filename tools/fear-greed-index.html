@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Fear &amp; Greed Index — Live Gauge | Crypto Idiot</title>
+  <meta name="description" content="Live Crypto Fear &amp; Greed Index gauge (0–100). See whether the market is in extreme fear, neutral or extreme greed — updated daily." />
+  <link rel="canonical" href="https://cryptoidiot.com/tools/fear-greed-index.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Fear & Greed Index?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A 0–100 scale that measures crypto market sentiment, created by alternative.me. Low values mean fear, high values mean greed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the index calculated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It combines six factors: volatility, market momentum/volume, social media sentiment, surveys, Bitcoin dominance, and Google Trends data for crypto queries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I do when the index shows extreme fear?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many contrarian investors see extreme fear as a potential buying opportunity, since panic selling often pushes prices below fair value. It's a signal to think, not an automatic buy order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does extreme greed mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extreme greed often coincides with market tops and corrections. Historically, when everyone is euphoric, risk is usually highest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often is the index updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Crypto Fear & Greed Index is updated once per day, based on data from the previous 24 hours."
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"><span class="ticker-loading">Loading live prices…</span></div>
+  </div>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Crypto Fear &amp; Greed Index</h1>
+      <p class="article-meta">One number that captures the market&#39;s mood</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p>Markets are driven by emotion as much as logic. The Fear & Greed Index distills the crypto market's emotional state into a single number from 0 (extreme fear) to 100 (extreme greed).</p>
+    <p>It combines volatility, market momentum, social media chatter, surveys and Bitcoin dominance into one daily reading — a useful gut-check before you make any move.</p>
+
+    <div class="tool-card tool-page-widget">
+      <div class="fng" id="fngBox">
+            <div class="fng-gauge">
+              <svg viewBox="0 0 200 110" class="fng-svg">
+                <path d="M10 100 A90 90 0 0 1 190 100" fill="none" stroke="#2a2f3a" stroke-width="16" stroke-linecap="round"/>
+                <path id="fngArc" d="M10 100 A90 90 0 0 1 190 100" fill="none" stroke="url(#fngGrad)" stroke-width="16" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="283"/>
+                <defs>
+                  <linearGradient id="fngGrad">
+                    <stop offset="0%" stop-color="#ef4444"/>
+                    <stop offset="50%" stop-color="#f59e0b"/>
+                    <stop offset="100%" stop-color="#22c55e"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="fng-value" id="fngValue">—</div>
+            </div>
+            <p class="fng-label" id="fngLabel">Loading…</p>
+          </div>
+    </div>
+
+    <h2>How to use this tool</h2>
+    <ol>
+      <li>The gauge shows today&#39;s index value and classification.</li>
+      <li>0–24 = extreme fear, 25–44 = fear, 45–55 = neutral, 56–74 = greed, 75–100 = extreme greed.</li>
+      <li>Values update daily from alternative.me.</li>
+    </ol>
+
+    <div class="callout">📖 <a href="/blog/common-crypto-scams.html" style="color:var(--accent)">Emotions make you a target — read: 5 Crypto Scams That Target Beginners</a></div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+        <details>
+          <summary>What is the Fear &amp; Greed Index?</summary>
+          <p>A 0–100 scale that measures crypto market sentiment, created by alternative.me. Low values mean fear, high values mean greed.</p>
+        </details>
+        <details>
+          <summary>How is the index calculated?</summary>
+          <p>It combines six factors: volatility, market momentum/volume, social media sentiment, surveys, Bitcoin dominance, and Google Trends data for crypto queries.</p>
+        </details>
+        <details>
+          <summary>What should I do when the index shows extreme fear?</summary>
+          <p>Many contrarian investors see extreme fear as a potential buying opportunity, since panic selling often pushes prices below fair value. It&#39;s a signal to think, not an automatic buy order.</p>
+        </details>
+        <details>
+          <summary>What does extreme greed mean?</summary>
+          <p>Extreme greed often coincides with market tops and corrections. Historically, when everyone is euphoric, risk is usually highest.</p>
+        </details>
+        <details>
+          <summary>How often is the index updated?</summary>
+          <p>The Crypto Fear &amp; Greed Index is updated once per day, based on data from the previous 24 hours.</p>
+        </details>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

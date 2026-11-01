@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DCA Calculator — Dollar-Cost Averaging Crypto Tool | Crypto Idiot</title>
+  <meta name="description" content="Free DCA calculator: simulate buying a fixed amount of crypto weekly or monthly. See total invested, estimated value and growth over any period." />
+  <link rel="canonical" href="https://cryptoidiot.com/tools/dca-calculator.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is DCA in crypto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "DCA (dollar-cost averaging) means investing a fixed amount of money at regular intervals regardless of price. You buy more when prices are low and less when they're high, averaging out your cost over time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is DCA a good strategy for Bitcoin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Historically, DCA into Bitcoin has smoothed out volatility for long-term holders. It won't beat buying at the perfect bottom, but almost nobody can time the bottom consistently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What growth rate should I use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a conservative simulation, many people use 5–10% annually. Crypto is volatile, so treat any projection as an illustration, not a prediction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the calculator include fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — exchange fees and recurring-buy fees are not included. On a real exchange, small per-purchase fees will slightly reduce returns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this financial advice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The calculator is an educational tool that illustrates how dollar-cost averaging works mathematically. Always do your own research."
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"><span class="ticker-loading">Loading live prices…</span></div>
+  </div>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>DCA (Dollar-Cost Averaging) Calculator</h1>
+      <p class="article-meta">Simulate weekly or monthly crypto investing</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p>Dollar-cost averaging means investing a fixed amount on a fixed schedule, no matter what the price does. It's the strategy most recommended for beginners because it removes emotion and guesswork from buying crypto.</p>
+    <p>This calculator shows what that could look like: enter how much you'd invest, how often, and for how long, then see your total invested, estimated final value and growth.</p>
+
+    <div class="tool-card tool-page-widget">
+      <div class="dca">
+            <label>Amount per purchase ($)
+              <input type="number" id="dcaAmount" value="50" min="1" step="any" />
+            </label>
+            <label>How often?
+              <select id="dcaFreq">
+                <option value="7">Weekly</option>
+                <option value="30">Monthly</option>
+                <option value="1">Daily</option>
+              </select>
+            </label>
+            <label>Time period (months)
+              <input type="number" id="dcaMonths" value="12" min="1" max="120" />
+            </label>
+            <label>Expected annual growth (%)
+              <input type="number" id="dcaGrowth" value="10" min="-50" max="100" step="any" />
+            </label>
+            <button class="btn btn-primary btn-block" id="dcaCalc">Calculate</button>
+            <div class="dca-result" id="dcaResult" hidden>
+              <div class="dca-stat"><span>Total invested</span><strong id="dcaInvested"></strong></div>
+              <div class="dca-stat"><span>Estimated value</span><strong id="dcaValue"></strong></div>
+              <div class="dca-stat"><span>Growth</span><strong id="dcaGrowthOut"></strong></div>
+              <p class="tool-note">Estimation only — not financial advice.</p>
+            </div>
+          </div>
+    </div>
+
+    <h2>How to use this tool</h2>
+    <ol>
+      <li>Enter the amount you&#39;d invest per purchase (e.g. $50).</li>
+      <li>Choose weekly, monthly or daily purchases.</li>
+      <li>Set the time period in months.</li>
+      <li>Enter an expected annual growth rate — 0% shows pure accumulation, positive values simulate growth.</li>
+      <li>Click Calculate to see total invested, estimated value and growth.</li>
+    </ol>
+
+    <div class="callout">📖 <a href="/blog/what-is-dca.html" style="color:var(--accent)">Learn the strategy: What Is DCA?</a></div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+        <details>
+          <summary>What is DCA in crypto?</summary>
+          <p>DCA (dollar-cost averaging) means investing a fixed amount of money at regular intervals regardless of price. You buy more when prices are low and less when they&#39;re high, averaging out your cost over time.</p>
+        </details>
+        <details>
+          <summary>Is DCA a good strategy for Bitcoin?</summary>
+          <p>Historically, DCA into Bitcoin has smoothed out volatility for long-term holders. It won&#39;t beat buying at the perfect bottom, but almost nobody can time the bottom consistently.</p>
+        </details>
+        <details>
+          <summary>What growth rate should I use?</summary>
+          <p>For a conservative simulation, many people use 5–10% annually. Crypto is volatile, so treat any projection as an illustration, not a prediction.</p>
+        </details>
+        <details>
+          <summary>Does the calculator include fees?</summary>
+          <p>No — exchange fees and recurring-buy fees are not included. On a real exchange, small per-purchase fees will slightly reduce returns.</p>
+        </details>
+        <details>
+          <summary>Is this financial advice?</summary>
+          <p>No. The calculator is an educational tool that illustrates how dollar-cost averaging works mathematically. Always do your own research.</p>
+        </details>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

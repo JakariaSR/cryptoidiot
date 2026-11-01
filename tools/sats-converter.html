@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sats Converter — BTC to Satoshis Calculator | Crypto Idiot</title>
+  <meta name="description" content="Convert BTC to satoshis (sats) and back instantly. 1 BTC = 100,000,000 sats. Free Bitcoin unit converter with live USD value." />
+  <link rel="canonical" href="https://cryptoidiot.com/tools/sats-converter.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a satoshi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A satoshi is the smallest unit of Bitcoin, named after its creator Satoshi Nakamoto. 1 satoshi = 0.00000001 BTC."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many satoshis are in 1 Bitcoin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "100,000,000 satoshis. That's 100 million, which is why whole Bitcoin prices of tens of thousands still allow very small purchases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do people count in sats?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because owning '50,000 sats' feels more tangible than owning '0.0005 BTC'. Sats also make it easier to compare small purchases and track stacking progress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I buy just a few satoshis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Practically, exchanges have minimum order sizes well above a few sats — usually a few dollars' worth. But technically, yes: Bitcoin is divisible to 1 sat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the live USD value based on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The USD estimate uses the current Bitcoin price from CoinGecko, refreshed on each page load."
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"><span class="ticker-loading">Loading live prices…</span></div>
+  </div>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Sats Converter (BTC ↔ Satoshis)</h1>
+      <p class="article-meta">Bitcoin is divisible — 1 BTC = 100,000,000 sats</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p>One Bitcoin costs thousands of dollars, but you don't need to buy a whole one. Each Bitcoin is divisible into 100 million units called satoshis (or sats), after Bitcoin's creator Satoshi Nakamoto.</p>
+    <p>Thinking in sats makes small purchases feel concrete: instead of owning 0.001 BTC, you own 100,000 sats. This converter flips between both units instantly and shows the live dollar value.</p>
+
+    <div class="tool-card tool-page-widget">
+      <div class="converter">
+            <div class="conv-row">
+              <input type="number" id="satsAmount" value="1" min="0" step="any" aria-label="Amount" />
+              <select id="satsFrom" aria-label="Convert from">
+                <option value="btc">BTC</option>
+                <option value="sats">Sats</option>
+              </select>
+            </div>
+            <div class="conv-swap">=</div>
+            <div class="conv-row">
+              <input type="text" id="satsResult" readonly aria-label="Result" />
+              <input type="text" value="SATS" readonly class="conv-fixed" aria-label="Unit" id="satsUnit" />
+            </div>
+            <p class="tool-note" id="satsNote">1 BTC = 100,000,000 sats.</p>
+          </div>
+    </div>
+
+    <h2>How to use this tool</h2>
+    <ol>
+      <li>Enter an amount in BTC or in sats.</li>
+      <li>Pick the direction — BTC to sats, or sats to BTC.</li>
+      <li>Read the converted value instantly, plus the live USD estimate at current Bitcoin prices.</li>
+    </ol>
+
+    <div class="callout">📖 <a href="/blog/how-to-buy-your-first-crypto.html" style="color:var(--accent)">Ready to stack your first sats? Read: How to Buy Your First Crypto</a></div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+        <details>
+          <summary>What is a satoshi?</summary>
+          <p>A satoshi is the smallest unit of Bitcoin, named after its creator Satoshi Nakamoto. 1 satoshi = 0.00000001 BTC.</p>
+        </details>
+        <details>
+          <summary>How many satoshis are in 1 Bitcoin?</summary>
+          <p>100,000,000 satoshis. That&#39;s 100 million, which is why whole Bitcoin prices of tens of thousands still allow very small purchases.</p>
+        </details>
+        <details>
+          <summary>Why do people count in sats?</summary>
+          <p>Because owning &#39;50,000 sats&#39; feels more tangible than owning &#39;0.0005 BTC&#39;. Sats also make it easier to compare small purchases and track stacking progress.</p>
+        </details>
+        <details>
+          <summary>Can I buy just a few satoshis?</summary>
+          <p>Practically, exchanges have minimum order sizes well above a few sats — usually a few dollars&#39; worth. But technically, yes: Bitcoin is divisible to 1 sat.</p>
+        </details>
+        <details>
+          <summary>What&#39;s the live USD value based on?</summary>
+          <p>The USD estimate uses the current Bitcoin price from CoinGecko, refreshed on each page load.</p>
+        </details>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

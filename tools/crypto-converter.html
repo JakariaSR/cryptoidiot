@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Converter — Live BTC, ETH &amp; Crypto to USD/EUR | Crypto Idiot</title>
+  <meta name="description" content="Free crypto converter with live CoinGecko rates. Convert Bitcoin, Ethereum, Solana and more to USD, EUR, GBP, BDT and INR instantly. No signup." />
+  <link rel="canonical" href="https://cryptoidiot.com/tools/crypto-converter.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this crypto converter free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, completely free with no signup, no limits and no ads on the tool itself. It runs in your browser."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do the prices come from?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rates come from CoinGecko, one of the most widely used crypto data aggregators, aggregated from hundreds of exchanges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often are rates updated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The converter fetches fresh rates every time the page loads. Between loads, values may drift slightly from the exact market price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which cryptocurrencies are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bitcoin (BTC), Ethereum (ETH), Solana (SOL), BNB, XRP, Dogecoin (DOGE), Cardano (ADA) and Litecoin (LTC) — the coins most beginners actually hold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the converter include exchange fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — it shows the raw market rate. Real exchanges add a small spread or fee, so the price you pay will usually be slightly different."
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"><span class="ticker-loading">Loading live prices…</span></div>
+  </div>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Crypto Converter</h1>
+      <p class="article-meta">Live rates · 8 coins · 5 fiat currencies · no signup</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p>How much is 0.05 BTC in real money? Half a Solana in euros? This free crypto converter gives you the answer in one second, using live market rates from CoinGecko.</p>
+    <p>Unlike most converters, there's no page reload, no account, and no upsell — just type an amount, pick a coin, and read the result. Rates refresh automatically while you use it.</p>
+
+    <div class="tool-card tool-page-widget">
+      <div class="converter">
+            <div class="conv-row">
+              <input type="number" id="convAmount" value="1" min="0" step="any" aria-label="Amount" />
+              <select id="convCoin" aria-label="Cryptocurrency">
+                <option value="bitcoin">BTC</option>
+                <option value="ethereum">ETH</option>
+                <option value="solana">SOL</option>
+                <option value="binancecoin">BNB</option>
+                <option value="ripple">XRP</option>
+                <option value="dogecoin">DOGE</option>
+                <option value="cardano">ADA</option>
+                <option value="litecoin">LTC</option>
+              </select>
+            </div>
+            <div class="conv-swap">=</div>
+            <div class="conv-row">
+              <input type="text" id="convResult" readonly aria-label="Result" />
+              <select id="convFiat" aria-label="Fiat currency">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="bdt">BDT</option>
+                <option value="inr">INR</option>
+              </select>
+            </div>
+            <p class="tool-note" id="convNote">Live rates via CoinGecko.</p>
+          </div>
+    </div>
+
+    <h2>How to use this tool</h2>
+    <ol>
+      <li>Type the amount of crypto you want to convert.</li>
+      <li>Choose the coin (BTC, ETH, SOL, BNB, XRP, DOGE, ADA, LTC).</li>
+      <li>Pick your fiat currency — USD, EUR, GBP, BDT or INR.</li>
+      <li>Read the converted value instantly, calculated at the live rate.</li>
+    </ol>
+
+    <div class="callout">📖 <a href="/blog/what-is-a-crypto-wallet.html" style="color:var(--accent)">New to crypto? Read: What Is a Crypto Wallet?</a></div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+        <details>
+          <summary>Is this crypto converter free?</summary>
+          <p>Yes, completely free with no signup, no limits and no ads on the tool itself. It runs in your browser.</p>
+        </details>
+        <details>
+          <summary>Where do the prices come from?</summary>
+          <p>Rates come from CoinGecko, one of the most widely used crypto data aggregators, aggregated from hundreds of exchanges.</p>
+        </details>
+        <details>
+          <summary>How often are rates updated?</summary>
+          <p>The converter fetches fresh rates every time the page loads. Between loads, values may drift slightly from the exact market price.</p>
+        </details>
+        <details>
+          <summary>Which cryptocurrencies are supported?</summary>
+          <p>Bitcoin (BTC), Ethereum (ETH), Solana (SOL), BNB, XRP, Dogecoin (DOGE), Cardano (ADA) and Litecoin (LTC) — the coins most beginners actually hold.</p>
+        </details>
+        <details>
+          <summary>Does the converter include exchange fees?</summary>
+          <p>No — it shows the raw market rate. Real exchanges add a small spread or fee, so the price you pay will usually be slightly different.</p>
+        </details>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

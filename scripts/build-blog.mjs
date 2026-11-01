@@ -178,9 +178,15 @@ console.log("built blog/index.html (" + sorted.length + " posts)");
 
 // --- sitemap.xml + robots.txt ---
 const today = new Date().toISOString().slice(0, 10);
+const TOOL_SLUGS = [
+  "crypto-converter", "dca-calculator", "bitcoin-halving-countdown",
+  "fear-greed-index", "sats-converter", "eth-unit-converter", "profit-loss-calculator",
+];
+
 const urls = [
   { loc: SITE + "/", lastmod: today, priority: "1.0" },
   { loc: SITE + "/blog/", lastmod: today, priority: "0.9" },
+  ...TOOL_SLUGS.map((s) => ({ loc: `${SITE}/tools/${s}.html`, lastmod: today, priority: "0.9" })),
   ...posts
     .sort((a, b) => String(a.fm.date).localeCompare(String(b.fm.date)))
     .map((p) => ({
@@ -209,7 +215,7 @@ console.log("built sitemap.xml (" + urls.length + " urls) and robots.txt");
 const DIST = ROOT + "dist/";
 await rm(DIST, { recursive: true, force: true });
 await mkdir(DIST, { recursive: true });
-for (const item of ["index.html", "sitemap.xml", "robots.txt", "css", "js", "blog", "admin", "images"]) {
+for (const item of ["index.html", "sitemap.xml", "robots.txt", "css", "js", "blog", "admin", "tools", "images"]) {
   try {
     await cp(ROOT + item, DIST + item, { recursive: true });
   } catch {

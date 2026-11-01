@@ -5,7 +5,7 @@
   "description": "Crypto tools and plain-English guides for absolute beginners.",
   "scripts": {
     "dev": "node scripts/dev-server.mjs --host 0.0.0.0 --port 7100",
-    "build": "node scripts/build-blog.mjs"
+    "build": "node scripts/build-tools.mjs && node scripts/build-blog.mjs"
   },
   "dependencies": {
     "marked": "^18.1.2"
