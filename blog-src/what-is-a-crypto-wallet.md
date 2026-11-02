@@ -4,8 +4,8 @@ description: A crypto wallet doesn't store coins — it stores keys. Learn what 
 tag: Beginner
 readtime: 5 min read
 date: 2026-10-31
-next_title: Buy your first crypto
-next_url: how-to-buy-your-first-crypto.html
+next_title: What is a seed phrase?
+next_url: what-is-a-seed-phrase.html
 ---
 
 Here's the sentence that will save you hours of confusion: **a crypto wallet doesn't store your coins. It stores your keys.**
