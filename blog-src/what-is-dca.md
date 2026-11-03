@@ -4,6 +4,8 @@ description: Dollar-cost averaging (DCA) means buying a fixed amount of crypto o
 tag: Strategy
 readtime: 5 min read
 date: 2026-10-31
+next_title: What is staking?
+next_url: what-is-staking.html
 ---
 
 **DCA** stands for **dollar-cost averaging**, and it's gloriously unsexy: you invest a *fixed amount of money* on a *fixed schedule*, no matter what the price is doing. $50 of Bitcoin every Monday. That's it. That's the strategy.
