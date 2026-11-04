@@ -4,8 +4,8 @@ description: From picking a trustworthy exchange to your first $20 purchase — 
 tag: Guide
 readtime: 8 min read
 date: 2026-10-31
-next_title: Scams to avoid
-next_url: common-crypto-scams.html
+next_title: What is a stablecoin?
+next_url: what-is-a-stablecoin.html
 ---
 
 You've read enough. You want to buy your first $20 of Bitcoin without getting scammed, overcharged, or lost in menus. This is the checklist.
