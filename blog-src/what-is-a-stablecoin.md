@@ -4,8 +4,8 @@ description: A stablecoin is a crypto token designed to stay worth $1. Learn how
 tag: Beginner
 readtime: 7 min read
 date: 2026-11-04
-next_title: Scams to avoid
-next_url: common-crypto-scams.html
+next_title: CEX vs DEX
+next_url: cex-vs-dex.html
 ---
 
 Bitcoin can drop 10% while you drink a coffee. For traders, that's normal. For anyone actually *using* crypto to send, save, or park money between trades, it's a dealbreaker. Enter the stablecoin: a crypto token designed to be boring. **The whole point of a stablecoin is that one coin stays worth roughly one US dollar — today, tomorrow, and during the chaos.**

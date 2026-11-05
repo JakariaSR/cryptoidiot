@@ -4,8 +4,8 @@ description: A seed phrase is 12 or 24 random words that controls all your crypt
 tag: Safety
 readtime: 7 min read
 date: 2026-11-02
-next_title: Buy your first crypto
-next_url: how-to-buy-your-first-crypto.html
+next_title: What is cold storage?
+next_url: what-is-cold-storage.html
 ---
 
 Somewhere in your crypto journey, an app will show you 12 or 24 random words and tell you to write them down. This is the moment that matters most in your entire crypto life. **Those words — your seed phrase — literally ARE your money.** Not your phone, not the app, not your password. The words.
