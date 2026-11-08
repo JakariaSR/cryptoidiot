@@ -4,8 +4,8 @@ description: Staking lets you earn rewards for locking up crypto and helping sec
 tag: Beginner
 readtime: 7 min read
 date: 2026-11-03
-next_title: What is DCA?
-next_url: what-is-dca.html
+next_title: Bull vs bear markets
+next_url: bull-vs-bear-markets.html
 ---
 
 You've probably seen it on every exchange: "Earn 5% APY on your ETH!" or "Stake now and get rewards!" It sounds like free money, which is exactly why you should slow down. **Staking is real — you genuinely can earn passive income from crypto you hold — but the yield is never free, and it always comes with risks.**
