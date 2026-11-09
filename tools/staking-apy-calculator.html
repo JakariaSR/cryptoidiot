@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staking APY Calculator — Free Crypto Yield Simulator | Crypto Idiot</title>
+  <meta name="description" content="Free staking calculator: enter your staked amount, APY and duration to see rewards earned — and how the coin&#39;s price change affects the final value." />
+  <link rel="canonical" href="https://cryptoidiot.com/tools/staking-apy-calculator.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is APY in staking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "APY (annual percentage yield) is the yearly reward rate for staking a coin, including compounding. A 5% APY means your staked amount would grow by roughly 5% over a year — paid in the staked coin, not dollars."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this calculator include the coin's price change?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — that's the point. The price-change field lets you see the final dollar value of your stake plus rewards under any scenario, so you can compare '5% APY but coin down 20%' against just holding cash."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are staking rewards guaranteed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Real APYs move with network conditions, and risks like slashing or validator downtime can reduce rewards. Treat any APY as a variable rate, not a promise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the calculation done?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rewards compound monthly using the standard APY formula: value = amount × (1 + APY)^(months/12). That final coin amount is then priced at your chosen price-change scenario."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are staking rewards taxable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In most countries, yes — rewards are usually taxed as income when received, and any gain when sold is a separate capital event. The math in this tool ignores taxes; your real net return will be lower depending on your country's rules."
+      }
+    }
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-track" id="tickerTrack"><span class="ticker-loading">Loading live prices…</span></div>
+  </div>
+
+  <section class="article-hero">
+    <div class="container">
+      <h1>Staking APY Calculator</h1>
+      <p class="article-meta">See what staking actually earns — before the coin&#39;s price moves the goalposts</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+    <p>Staking ads quote an APY — but that number alone tells you almost nothing. A 5% APY on a coin that drops 30% is a loss. This calculator shows the full picture: rewards earned over time, and what your stake is worth after any price scenario you choose.</p>
+    <p>Enter how much you'd stake, the APY, the duration, and your expected price change for the coin. Rewards are treated as compounding monthly and paid in the coin itself, so price moves affect both your principal and your rewards — exactly like real staking.</p>
+
+    <div class="tool-card tool-page-widget">
+      <div class="dca">
+            <label>Amount staked ($)
+              <input type="number" id="stakeAmount" value="1000" min="0" step="any" />
+            </label>
+            <label>APY (%, annual)
+              <input type="number" id="stakeApy" value="5" min="0" max="100" step="any" />
+            </label>
+            <label>Duration (months)
+              <input type="number" id="stakeMonths" value="12" min="1" max="600" />
+            </label>
+            <label>Coin price change over the period (%)
+              <input type="number" id="stakePriceChange" value="0" step="any" />
+            </label>
+            <button class="btn btn-primary btn-block" id="stakeCalc">Calculate</button>
+            <div class="dca-result" id="stakeResult" hidden>
+              <div class="dca-stat"><span>Rewards earned (in the coin)</span><strong id="stakeRewards"></strong></div>
+              <div class="dca-stat"><span>Final value incl. price change</span><strong id="stakeTotal"></strong></div>
+              <div class="dca-stat"><span>Total return</span><strong id="stakeReturn"></strong></div>
+              <p class="tool-note" id="stakeNote">Rewards compound monthly; everything is priced in the coin, so price moves affect principal <em>and</em> rewards. Estimation only — not financial advice.</p>
+            </div>
+          </div>
+    </div>
+
+    <h2>How to use this tool</h2>
+    <ol>
+      <li>Enter the amount you&#39;d stake, in dollars.</li>
+      <li>Enter the APY (annual percentage yield) — typical major-coin staking rates are roughly 2–7%.</li>
+      <li>Set the duration in months.</li>
+      <li>Enter a price-change scenario for the coin over that period — 0% shows pure staking rewards, negative values show what a price drop does to the total.</li>
+      <li>Click Calculate to see rewards earned, final value, and total return.</li>
+    </ol>
+
+    <div class="callout">📖 <a href="/blog/what-is-staking.html" style="color:var(--accent)">New to staking? Read: What Is Staking?</a></div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+        <details>
+          <summary>What is APY in staking?</summary>
+          <p>APY (annual percentage yield) is the yearly reward rate for staking a coin, including compounding. A 5% APY means your staked amount would grow by roughly 5% over a year — paid in the staked coin, not dollars.</p>
+        </details>
+        <details>
+          <summary>Does this calculator include the coin&#39;s price change?</summary>
+          <p>Yes — that&#39;s the point. The price-change field lets you see the final dollar value of your stake plus rewards under any scenario, so you can compare &#39;5% APY but coin down 20%&#39; against just holding cash.</p>
+        </details>
+        <details>
+          <summary>Are staking rewards guaranteed?</summary>
+          <p>No. Real APYs move with network conditions, and risks like slashing or validator downtime can reduce rewards. Treat any APY as a variable rate, not a promise.</p>
+        </details>
+        <details>
+          <summary>How is the calculation done?</summary>
+          <p>Rewards compound monthly using the standard APY formula: value = amount × (1 + APY)^(months/12). That final coin amount is then priced at your chosen price-change scenario.</p>
+        </details>
+        <details>
+          <summary>Are staking rewards taxable?</summary>
+          <p>In most countries, yes — rewards are usually taxed as income when received, and any gain when sold is a separate capital event. The math in this tool ignores taxes; your real net return will be lower depending on your country&#39;s rules.</p>
+        </details>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

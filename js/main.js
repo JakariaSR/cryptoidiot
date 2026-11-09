@@ -281,6 +281,29 @@
     var plBtn = document.getElementById("plCalc");
     if (plBtn) plBtn.addEventListener("click", runPL);
 
+    /* ---------- Staking APY calculator ---------- */
+    function runStaking() {
+      var amount = Math.max(0, parseFloat(document.getElementById("stakeAmount").value) || 0);
+      var apy = parseFloat(document.getElementById("stakeApy").value) || 0;
+      var months = Math.max(0, parseFloat(document.getElementById("stakeMonths").value) || 0);
+      var change = parseFloat(document.getElementById("stakePriceChange").value) || 0;
+      if (months <= 0) return;
+      // Monthly compounding at the given annual APY
+      var rewards = amount * (Math.pow(1 + apy / 100, months / 12) - 1);
+      // Rewards are paid in the coin, so price change applies to principal + rewards
+      var total = (amount + rewards) * (1 + change / 100);
+      var retPct = amount > 0 ? ((total - amount) / amount) * 100 : 0;
+      document.getElementById("stakeRewards").textContent = "+$" + rewards.toLocaleString("en-US", { maximumFractionDigits: 2 });
+      var totalEl = document.getElementById("stakeTotal");
+      totalEl.textContent = "$" + total.toLocaleString("en-US", { maximumFractionDigits: 2 });
+      var retEl = document.getElementById("stakeReturn");
+      retEl.textContent = (retPct >= 0 ? "+" : "−") + Math.abs(retPct).toFixed(2) + "%";
+      retEl.className = retPct >= 0 ? "pos" : "neg";
+      document.getElementById("stakeResult").hidden = false;
+    }
+    var stakeBtn = document.getElementById("stakeCalc");
+    if (stakeBtn) stakeBtn.addEventListener("click", runStaking);
+
     loadPrices().then(function () {
       renderTicker();
       runConversion();

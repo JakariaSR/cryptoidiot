@@ -151,6 +151,28 @@ const WIDGETS = {
               <div class="dca-stat"><span>Profit / loss</span><strong id="plPnl"></strong></div>
             </div>
           </div>`,
+
+  staking: `<div class="dca">
+            <label>Amount staked ($)
+              <input type="number" id="stakeAmount" value="1000" min="0" step="any" />
+            </label>
+            <label>APY (%, annual)
+              <input type="number" id="stakeApy" value="5" min="0" max="100" step="any" />
+            </label>
+            <label>Duration (months)
+              <input type="number" id="stakeMonths" value="12" min="1" max="600" />
+            </label>
+            <label>Coin price change over the period (%)
+              <input type="number" id="stakePriceChange" value="0" step="any" />
+            </label>
+            <button class="btn btn-primary btn-block" id="stakeCalc">Calculate</button>
+            <div class="dca-result" id="stakeResult" hidden>
+              <div class="dca-stat"><span>Rewards earned (in the coin)</span><strong id="stakeRewards"></strong></div>
+              <div class="dca-stat"><span>Final value incl. price change</span><strong id="stakeTotal"></strong></div>
+              <div class="dca-stat"><span>Total return</span><strong id="stakeReturn"></strong></div>
+              <p class="tool-note" id="stakeNote">Rewards compound monthly; everything is priced in the coin, so price moves affect principal <em>and</em> rewards. Estimation only — not financial advice.</p>
+            </div>
+          </div>`,
 };
 
 const TOOLS = [
@@ -299,6 +321,27 @@ const TOOLS = [
       { q: "What if I bought at different prices?", a: "For multiple purchases at different prices, you'd calculate the average buy price first (a DCA calculator handles that scenario better), then plug the average into this tool." },
       { q: "Why does percentage matter more than dollars?", a: "Percentage normalizes for position size — a $100 gain means very different things on a $200 investment versus a $20,000 one." },
       { q: "Is this tool free?", a: "Yes — it runs entirely in your browser, with no signup and no data stored anywhere." },
+    ],
+  },
+  {
+    slug: "staking-apy-calculator",
+    widget: "staking",
+    title: "Staking APY Calculator — Free Crypto Yield Simulator | Crypto Idiot",
+    description: "Free staking calculator: enter your staked amount, APY and duration to see rewards earned — and how the coin's price change affects the final value.",
+    h1: "Staking APY Calculator",
+    tagline: "See what staking actually earns — before the coin's price moves the goalposts",
+    intro: [
+      "Staking ads quote an APY — but that number alone tells you almost nothing. A 5% APY on a coin that drops 30% is a loss. This calculator shows the full picture: rewards earned over time, and what your stake is worth after any price scenario you choose.",
+      "Enter how much you'd stake, the APY, the duration, and your expected price change for the coin. Rewards are treated as compounding monthly and paid in the coin itself, so price moves affect both your principal and your rewards — exactly like real staking.",
+    ],
+    steps: ["Enter the amount you'd stake, in dollars.", "Enter the APY (annual percentage yield) — typical major-coin staking rates are roughly 2–7%.", "Set the duration in months.", "Enter a price-change scenario for the coin over that period — 0% shows pure staking rewards, negative values show what a price drop does to the total.", "Click Calculate to see rewards earned, final value, and total return."],
+    guide: { url: "/blog/what-is-staking.html", label: "New to staking? Read: What Is Staking?" },
+    faqs: [
+      { q: "What is APY in staking?", a: "APY (annual percentage yield) is the yearly reward rate for staking a coin, including compounding. A 5% APY means your staked amount would grow by roughly 5% over a year — paid in the staked coin, not dollars." },
+      { q: "Does this calculator include the coin's price change?", a: "Yes — that's the point. The price-change field lets you see the final dollar value of your stake plus rewards under any scenario, so you can compare '5% APY but coin down 20%' against just holding cash." },
+      { q: "Are staking rewards guaranteed?", a: "No. Real APYs move with network conditions, and risks like slashing or validator downtime can reduce rewards. Treat any APY as a variable rate, not a promise." },
+      { q: "How is the calculation done?", a: "Rewards compound monthly using the standard APY formula: value = amount × (1 + APY)^(months/12). That final coin amount is then priced at your chosen price-change scenario." },
+      { q: "Are staking rewards taxable?", a: "In most countries, yes — rewards are usually taxed as income when received, and any gain when sold is a separate capital event. The math in this tool ignores taxes; your real net return will be lower depending on your country's rules." },
     ],
   },
 ];

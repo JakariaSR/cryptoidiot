@@ -298,6 +298,34 @@
           <a class="tool-link" href="tools/profit-loss-calculator.html">Full tool & guide →</a>
         </article>
 
+        <!-- Staking APY Calculator -->
+        <article class="tool-card" id="tool-staking">
+          <h3>🌱 Staking APY Calculator</h3>
+          <p class="tool-desc">Staking coins you'd hold anyway? See what the APY actually adds — and what price moves do to it.</p>
+          <div class="dca">
+            <label>Amount staked ($)
+              <input type="number" id="stakeAmount" value="1000" min="0" step="any" />
+            </label>
+            <label>APY (%, annual)
+              <input type="number" id="stakeApy" value="5" min="0" max="100" step="any" />
+            </label>
+            <label>Duration (months)
+              <input type="number" id="stakeMonths" value="12" min="1" max="600" />
+            </label>
+            <label>Coin price change over the period (%)
+              <input type="number" id="stakePriceChange" value="0" step="any" />
+            </label>
+            <button class="btn btn-primary btn-block" id="stakeCalc">Calculate</button>
+            <div class="dca-result" id="stakeResult" hidden>
+              <div class="dca-stat"><span>Rewards earned (in the coin)</span><strong id="stakeRewards"></strong></div>
+              <div class="dca-stat"><span>Final value incl. price change</span><strong id="stakeTotal"></strong></div>
+              <div class="dca-stat"><span>Total return</span><strong id="stakeReturn"></strong></div>
+              <p class="tool-note">Rewards compound monthly; principal and rewards both move with the coin's price. Estimation only — not financial advice.</p>
+            </div>
+          </div>
+          <a class="tool-link" href="tools/staking-apy-calculator.html">Full tool & guide →</a>
+        </article>
+
       </div>
     </div>
   </section>

@@ -60,6 +60,8 @@ That's very different from "guaranteed 20% yield" schemes, where your "interest"
 
 For a beginner with a small, long-term position, staking a coin you'd hold anyway is a reasonable middle step — you're paid for patience you were already planning to have. For money you might need next month, the lock-up risk isn't worth a few percent.
 
+Want to run the numbers yourself? Try the free [Staking APY Calculator](/tools/staking-apy-calculator.html) — plug in your amount, an APY, and a price-change scenario to see whether the rewards would survive what the market might do.
+
 ## The one-paragraph version
 
 Staking means locking up coins you own to help secure a proof-of-stake blockchain, and getting paid rewards by the network for it — think of it as interest for doing a job, not free money. You can do it on an exchange (easiest, but you're trusting them), from your own wallet (more control), or by running a validator (not for beginners). The catch: rewards of 2–6% won't save you if the coin's price drops, your coins get locked for days or weeks when you unstake, bad validators can lose a slice of your stake, and rewards are usually taxable. It's a sensible add-on for coins you're holding long-term anyway — not a reason to buy a coin you wouldn't otherwise hold.

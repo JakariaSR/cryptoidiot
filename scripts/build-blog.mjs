@@ -181,6 +181,7 @@ const today = new Date().toISOString().slice(0, 10);
 const TOOL_SLUGS = [
   "crypto-converter", "dca-calculator", "bitcoin-halving-countdown",
   "fear-greed-index", "sats-converter", "eth-unit-converter", "profit-loss-calculator",
+  "staking-apy-calculator",
 ];
 
 const urls = [

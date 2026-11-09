@@ -4,8 +4,8 @@ description: A rug pull is when crypto developers abandon a project and run off 
 tag: Safety
 readtime: 7 min read
 date: 2026-11-08
-next_title: Scams to avoid
-next_url: common-crypto-scams.html
+next_title: What is the Bitcoin halving?
+next_url: what-is-bitcoin-halving.html
 ---
 
 Imagine a shop opens in your street. The owners say it's going to be the next big thing, the line around the block is real, and neighbors are doubling their money by buying in early. Two months later the shop is empty, the owners' phones are dead, and the money is gone. In crypto this has a name: **a rug pull — developers hype a token, take your money, then vanish.** It's not rare, it's not subtle, and it follows the same playbook almost every time.
