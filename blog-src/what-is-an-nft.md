@@ -4,8 +4,8 @@ description: An NFT is a blockchain certificate proving you own a unique digital
 tag: Beginner
 readtime: 7 min read
 date: 2026-11-09
-next_title: Scams to avoid
-next_url: common-crypto-scams.html
+next_title: What is a blockchain?
+next_url: what-is-a-blockchain.html
 ---
 
 In 2021, a collage of digital images sold for $69 million. The art world lost its mind, the internet minted a million memes, and a new three-letter acronym entered the mainstream: NFT. Strip away the madness and the concept is clean: **an NFT is a blockchain record proving that one specific wallet owns one specific digital item — and that the item is unique, not interchangeable.**
