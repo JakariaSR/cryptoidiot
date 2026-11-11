@@ -12,7 +12,7 @@ Roughly every four years, Bitcoin does something almost no other asset can: it m
 
 ## What actually happens during a halving
 
-Bitcoin doesn't have a mint printing coins. Instead, "miners" — computers competing to process transactions — earn new Bitcoin as a reward for each block of transactions they add to the ledger.
+Bitcoin doesn't have a mint printing coins. Instead, "miners" — computers competing to process transactions — earn new Bitcoin as a reward for each block of transactions they add to the [blockchain](what-is-a-blockchain.html).
 
 Every 210,000 blocks (roughly four years at Bitcoin's average 10-minute block time), the reward **halves**:
 

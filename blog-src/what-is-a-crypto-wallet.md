@@ -10,7 +10,7 @@ next_url: what-is-a-seed-phrase.html
 
 Here's the sentence that will save you hours of confusion: **a crypto wallet doesn't store your coins. It stores your keys.**
 
-Your coins never actually live "in" anything. They live on the blockchain — a giant public ledger that everyone can see. What the wallet holds is the **private key**: a secret code that proves those coins are yours and lets you move them.
+Your coins never actually live "in" anything. They live on the [blockchain](what-is-a-blockchain.html) — a giant public ledger that everyone can see. What the wallet holds is the **private key**: a secret code that proves those coins are yours and lets you move them.
 
 ## The key analogy that actually works
 
@@ -29,7 +29,7 @@ Think of the blockchain as a massive row of safety deposit boxes behind glass. A
 
 ## The seed phrase: 12–24 words that ARE your wallet
 
-When you set up a wallet, it shows you a **recovery phrase** (also called a seed phrase): 12 or 24 random words. This phrase is a human-readable version of your master private key.
+When you set up a wallet, it shows you a **recovery phrase** (also called a [seed phrase](what-is-a-seed-phrase.html)): 12 or 24 random words. This phrase is a human-readable version of your master private key — and our [cold storage guide](what-is-cold-storage.html) covers how to protect it long-term.
 
 - Anyone with your seed phrase can restore your wallet on *any* device and take everything.
 - No legitimate company, support agent, or giveaway will *ever* ask for it. Asking for your seed phrase is the single biggest red flag in crypto.

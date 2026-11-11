@@ -47,7 +47,7 @@ Strip away the trading culture and stablecoins solve real problems:
 
 **2. Issuer risk.** Fiat-backed stablecoins are IOUs. If the issuer is mismanaged, censored by regulators, or — worst case — fraudulent, the tokens can become worthless. This is why transparency matters: the trustworthy issuers publish regular attestations of their reserves.
 
-**3. Regulatory risk.** Governments are still deciding how to treat stablecoins. Rules can change which coins exchanges offer, what you must do to use them, and what happens to the ones that don't comply. For a beginner: stick to the large, transparent, heavily traded stablecoins and you'll face the least surprises.
+**3. Regulatory risk.** Governments are still deciding how to treat stablecoins — and their tax agencies are watching too (see our [crypto tax guide](crypto-taxes-for-beginners.html)). Rules can change which coins exchanges offer, what you must do to use them, and what happens to the ones that don't comply. For a beginner: stick to the large, transparent, heavily traded stablecoins and you'll face the least surprises.
 
 ## Which stablecoins do beginners actually use?
 

@@ -12,7 +12,7 @@ You've read enough. You want to buy your first $20 of Bitcoin without getting sc
 
 ## Step 1: Pick a reputable exchange
 
-An exchange is where you swap regular money (USD, EUR, etc.) for crypto. For a first purchase, use a large, long-running exchange — think Coinbase, Kraken, or Binance, depending on what's available in your country.
+An [exchange](cex-vs-dex.html) is where you swap regular money (USD, EUR, etc.) for crypto. For a first purchase, use a large, long-running exchange — think Coinbase, Kraken, or Binance, depending on what's available in your country.
 
 - Check that it **legally operates in your country** and supports your local payment methods.
 - Look up its history: has it ever been hacked, and if so, did it repay users?
@@ -37,7 +37,7 @@ Start with an amount you can genuinely afford to lose — $20–50 is perfect fo
 
 ## Step 5: Make your first purchase
 
-Buy a well-known, highly liquid coin: **Bitcoin (BTC)** or **Ethereum (ETH)**. Beginners get tempted by cheap coins with wild promises. Every coin is divisible — you can own 0.001 BTC — so "price per coin" is irrelevant. A $10,000 coin and a $0.01 coin can grow or shrink by the same percentage.
+Buy a well-known, highly liquid coin: **Bitcoin (BTC)** or **Ethereum (ETH)**. Beginners get tempted by cheap coins with wild promises. Every coin is divisible — you can own 0.001 BTC — so "[price per coin](market-cap-vs-price.html)" is irrelevant. A $10,000 coin and a $0.01 coin can grow or shrink by the same percentage.
 
 - Use a **market order** (buys instantly at current price) for simplicity.
 - Limit orders (set your own price) save a little on fees but can be confusing the first time.

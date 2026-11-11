@@ -12,7 +12,7 @@ Imagine a shop opens in your street. The owners say it's going to be the next bi
 
 ## How a rug pull actually works
 
-Most rug pulls happen on decentralized exchanges, where anyone can create a token in minutes with zero approval. The mechanics are depressingly simple:
+Most rug pulls happen on [decentralized exchanges](cex-vs-dex.html), where anyone can create a token in minutes with zero approval. The mechanics are depressingly simple:
 
 1. **A token is created** — often with a slick name, a copied logo, and a website built in a weekend.
 2. **The developers seed a liquidity pool** — pairing the new token with a real one (like ETH) so people can buy it.
@@ -32,7 +32,7 @@ The buyers are left holding tokens that now buy nothing, trade nowhere, and have
 
 **4. Hype with no substance.** A whitepaper full of buzzwords and no technical detail. A "product" that's always launching next quarter. Roadmaps that are 90% emojis. If you can't explain what the token does after reading their own materials — the token's function *is* separating you from your money.
 
-**5. Suspicious token economics.** Huge portions of supply held by a few wallets (checkable on a block explorer). Taxes on selling that punish exit. Mint functions that let developers print unlimited new coins. Each of these alone is a flag; together they're a neon sign.
+**5. Suspicious token economics.** Huge portions of supply held by a few wallets (checkable on a block explorer — if you're new to how explorers read the [blockchain](what-is-a-blockchain.html), start there). Taxes on selling that punish exit. Mint functions that let developers print unlimited new coins. Each of these alone is a flag; together they're a neon sign.
 
 <div class="callout"><b>The mindset that protects you:</b> in small-cap crypto, assume a project is guilty until proven innocent — and "proof" means verifiable on-chain facts (locked liquidity, fair distribution, known team), not a charismatic founder and a busy Telegram. The burden of proof is on <b>them</b>, and if they haven't met it, the cheapest decision in crypto is skipping the trade.</div>
 

@@ -34,7 +34,7 @@ Market cap is the great equalizer. A few useful mental buckets:
 - **Mega caps** (hundreds of billions+): Bitcoin, Ethereum. Comparatively established, lower risk, lower growth ceiling.
 - **Large caps** (tens of billions): established majors. Still volatile, but battle-tested.
 - **Mid caps** (billions): meaningful projects with real usage, higher risk, higher potential.
-- **Small/micro caps** (millions): speculative territory — where most rug pulls and dead coins live.
+- **Small/micro caps** (millions): speculative territory — where most [rug pulls](what-is-a-rug-pull.html) and dead coins live.
 
 A $10 million coin and a $10 billion coin can both have the same price per token. Their market caps tell you one is a garage startup and the other is a skyscraper. Same sticker price, wildly different risk.
 

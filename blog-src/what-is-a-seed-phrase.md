@@ -34,7 +34,7 @@ Paper and brain-friendly words beat a 64-character string. That's the whole idea
 
 This is where beginners win or lose everything. There are no exceptions to these.
 
-**1. Write it on paper or metal — never digitally.** No screenshots, no notes app, no email to yourself, no cloud backup, no password manager. Anything connected to the internet can be hacked or synced somewhere you forgot about. Paper is fine for most people; steel plates (they cost $20–60) protect against fire and floods.
+**1. Write it on paper or metal — never digitally.** No screenshots, no notes app, no email to yourself, no cloud backup, no password manager. Anything connected to the internet can be hacked or synced somewhere you forgot about. Paper is fine for most people; [steel plates](what-is-cold-storage.html) (they cost $20–60) protect against fire and floods.
 
 **2. Never type it into a website.** No legitimate service — not an exchange, not a wallet company, not "support" — will *ever* ask you to enter your seed phrase on a website. Every single request like this is a scam, without exception. This one rule protects you from 90% of crypto theft.
 

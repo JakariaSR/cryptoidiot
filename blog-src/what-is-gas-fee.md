@@ -37,7 +37,7 @@ Other chains work similarly but cheaper. Solana fees are typically a fraction of
 
 ## 4 ways to pay less gas
 
-1. **Time your transactions.** Weekday afternoons (US time) and weekends are usually quieter. Sites like gas trackers show you the current price before you confirm.
+1. **Time your transactions.** Weekday afternoons (US time) and weekends are usually quieter. Gas trackers show you the current price before you confirm — and our free [ETH unit converter](/tools/eth-unit-converter.html) translates any fee quote into units that actually make sense.
 2. **Use a Layer-2 network.** For swaps and transfers, moving to Arbitrum, Optimism, or Base can cut fees by 95%+.
 3. **Batch when possible.** Some wallets let you combine multiple actions into one transaction — one fee instead of three.
 4. **Set a max fee you're willing to pay.** Most wallets let you cap it. If the network gets busier than your cap, the transaction waits — better than overpaying in a panic.

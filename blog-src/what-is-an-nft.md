@@ -12,7 +12,7 @@ In 2021, a collage of digital images sold for $69 million. The art world lost it
 
 ## Breaking down the name
 
-- **Token** — a digital entry on a blockchain, like the coins you already know.
+- **Token** — a digital entry on a [blockchain](what-is-a-blockchain.html), like the coins you already know.
 - **Non-fungible** — the opposite of money. One dollar is identical to any other dollar; they're *fungible*. A painting, a house, or a concert ticket is *not* interchangeable with any other — each is one of a kind. Non-fungible = unique.
 
 So an NFT is essentially a **certificate of authenticity that can't be forged or duplicated**, because it lives on a blockchain. Anyone can copy a JPEG — but only one wallet can hold the token that says *this* is the original, officially linked item.
@@ -58,7 +58,7 @@ Many early collections are now worth a fraction of their peak, and most 2021 pro
 
 **2. Liquidity is thin.** You can buy an NFT in seconds; selling one can take weeks or never happen at all. An NFT's "floor price" is an illusion of a market — there's no guarantee a buyer exists at that number.
 
-**3. Fees and bridges multiply costs.** Minting and trading on Ethereum involves gas fees (sometimes tens of dollars), and moving NFTs between chains adds more. Small purchases can be eaten by transaction costs.
+**3. Fees and bridges multiply costs.** Minting and trading on Ethereum involves [gas fees](what-is-gas-fee.html) (sometimes tens of dollars), and moving NFTs between chains adds more. Small purchases can be eaten by transaction costs.
 
 <div class="callout"><b>The honest beginner position:</b> treat NFTs like collectible art, not like crypto. You buy art because you love it and can afford to lose the money — not because a line on a chart promises to go up. If a project needs you to recruit friends or promises returns, it's not art; it's a scheme wearing art's clothes.</div>
 

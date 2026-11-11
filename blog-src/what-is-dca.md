@@ -45,7 +45,7 @@ A fixed schedule is a pre-commitment device. The decision was made once, calmly,
 - DCA into a fundamentally bad asset just means losing money on a schedule. It's a buying method, not a magic spell.
 - Recurring buys can come with small fees per purchase — check your exchange's fee structure.
 
-<div class="callout"><b>Try it:</b> plug your numbers into the <a href="/#tools" style="color:var(--accent)">DCA calculator</a> on our homepage and see how different growth rates change the picture.</div>
+<div class="callout"><b>Try it:</b> plug your numbers into the <a href="/tools/dca-calculator.html" style="color:var(--accent)">free DCA calculator</a> on our homepage and see how different growth rates change the picture.</div>
 
 ## The one-paragraph version
 

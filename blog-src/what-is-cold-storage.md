@@ -25,7 +25,7 @@ The trade is brutally simple: hot = convenient and hackable, cold = clumsy and n
 
 **2. Paper wallets (the DIY version).** Print your keys or seed phrase on paper and store it like cash. It works, it's free, and it's fragile — fire, water, a curious relative, and it's gone. Mostly a niche option today, but the underlying logic (offline = safe) is the same one that makes seed phrases written on paper "cold."
 
-**3. Steel/metal backups.** Not a wallet by itself, but the upgrade every cold-storage setup eventually needs: your seed phrase stamped into fireproof, waterproof metal. This protects the *backup* against the physical world the same way the hardware wallet protects it against the digital one.
+**3. Steel/metal backups.** Not a wallet by itself, but the upgrade every cold-storage setup eventually needs: your [seed phrase](what-is-a-seed-phrase.html) stamped into fireproof, waterproof metal. This protects the *backup* against the physical world the same way the hardware wallet protects it against the digital one.
 
 ## How a hardware wallet actually protects you
 

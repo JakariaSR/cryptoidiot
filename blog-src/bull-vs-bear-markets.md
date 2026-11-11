@@ -37,7 +37,7 @@ Markets run on a feedback loop between price and mood:
 
 **Bear engine:** prices fall → fear spreads → people sell to "get out before it's worse" → selling pushes prices lower → headlines get apocalyptic → weak hands exit at the bottom. The same herd instinct that pumped the bubble now tramples it.
 
-Neither animal is rational on any given day. Both are rational over long periods. That's why timing day-to-day moves is a casino, while boring multi-year habits (like DCA) survive both animals.
+Neither animal is rational on any given day. Both are rational over long periods. That's why timing day-to-day moves is a casino, while boring multi-year habits (like [DCA](what-is-dca.html)) survive both animals.
 
 ## How beginners should behave in each
 

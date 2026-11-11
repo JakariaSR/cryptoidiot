@@ -53,7 +53,7 @@ Here's the uncomfortable evidence: these patterns have modest predictive power a
 
 What charts *are* genuinely good for:
 
-1. **Context** — is this coin in an uptrend, downtrend, or chop? Trend is real information.
+1. **Context** — is this coin in an [uptrend, downtrend, or chop](bull-vs-bear-markets.html)? Trend is real information.
 2. **Volatility** — wide candles and long wicks tell you a coin is jumpy; position size accordingly.
 3. **Levels** — prices where the market repeatedly bounces or stalls ("support" and "resistance") reveal where crowds made decisions before.
 
@@ -63,7 +63,7 @@ Use them for that. Leave the prophecy to the people selling courses.
 
 1. **Zoom out first.** Open the weekly, then daily chart. Ask: up, down, or sideways over the past months?
 2. **Check the recent story.** Last 10–20 candles: is momentum building or fading? Any violent rejections?
-3. **Note the key levels.** Mark where price has repeatedly turned. If you're buying, those zones are where the crowd has made decisions before — expect a fight there again.
+3. **Note the key levels.** Mark where price has repeatedly turned. If you're buying, those zones are where the crowd has made decisions before — expect a fight there again. (Want a second opinion on the crowd's mood? Check our live [Fear & Greed Index](/tools/fear-greed-index.html).)
 
 Then — and this is the part that actually makes money — decide your position size and exit plan *before* emotion gets involved. The chart informs; the plan protects.
 

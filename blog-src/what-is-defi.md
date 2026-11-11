@@ -18,7 +18,7 @@ The pieces you'll hear about:
 
 - **DEXs** — decentralized exchanges like Uniswap, where users trade directly from their wallets against liquidity pools (you met these in the CEX vs DEX guide — they're DeFi's front door).
 - **Lending protocols** — deposit your coins and earn interest; borrow against your crypto without selling it. Rates set by supply and demand, updated continuously.
-- **Stablecoin systems** — decentralized versions of the dollar-pegged coins you already know.
+- **Stablecoin systems** — decentralized versions of the [dollar-pegged coins](what-is-a-stablecoin.html) you already know.
 - **Yield strategies** — automated programs that move your deposits between protocols chasing the best rates.
 
 The common thread: **no institution is holding your funds.** The smart contract holds them, according to rules anyone can read, and you interact with it directly from your own wallet.
@@ -56,7 +56,7 @@ DeFi's dangers are structural, not incidental:
 
 **3. Oracle and liquidation cascades.** Protocols rely on external price feeds ("oracles"). If those glitch or markets crash violently, loans can liquidate in waves, and even careful users get caught.
 
-**4. Scams and rug pulls.** Low barriers to entry mean anyone can launch a "protocol." Most of the rug-pull playbook from earlier guides was written in DeFi. Anonymous teams plus unaudited code plus huge promised yields is not an investment; it's a coin flip against a loaded die.
+**4. Scams and rug pulls.** Low barriers to entry mean anyone can launch a "protocol." Most of the [rug pull](what-is-a-rug-pull.html) playbook was written in DeFi. Anonymous teams plus unaudited code plus huge promised yields is not an investment; it's a coin flip against a loaded die.
 
 **5. No undo, no support, no regulator.** Send funds to a contract with a typo, and there is no help desk. DeFi gives you the bank's job without the bank's training.
 

@@ -36,7 +36,7 @@ A website or app promises steady returns: 1% per day, 20% per month, "AI trading
 
 You search for "MetaMask download" and click a sponsored ad — it's a clone that steals your seed phrase. Or a "support agent" DMs you about a "suspicious login" and asks you to "verify your wallet." Or an email that looks exactly like Coinbase links to a login page that isn't.
 
-**Spot it in seconds:** anyone asking for your seed phrase or private key — *ever*, for any reason — is a thief. Type wallet URLs yourself instead of clicking ads, and bookmark the real ones.
+**Spot it in seconds:** anyone asking for your [seed phrase](what-is-a-seed-phrase.html) or private key — *ever*, for any reason — is a thief. Type wallet URLs yourself instead of clicking ads, and bookmark the real ones.
 
 ## 5. The pump-and-dump
 

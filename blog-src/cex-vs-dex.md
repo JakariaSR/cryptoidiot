@@ -20,7 +20,7 @@ A CEX — Binance, Coinbase, Kraken, and the like — works like a stockbroker o
 
 ## The DEX: a vending machine, not a shop
 
-A DEX — Uniswap, PancakeSwap, Jupiter, and others — is different in kind, not just degree. There's no company holding funds. Instead, pools of crypto supplied by other users sit in a smart contract, and the software swaps between them automatically. You connect your own wallet, trade directly from it, and your coins never leave your control.
+A DEX — Uniswap, PancakeSwap, Jupiter, and others — is different in kind, not just degree. There's no company holding funds. Instead, pools of crypto supplied by other users sit in a [smart contract](what-is-defi.html), and the software swaps between them automatically. You connect your own wallet, trade directly from it, and your coins never leave your control.
 
 - **You keep your keys the whole time.** The DEX never takes custody, which means it also can't lose your coins in a hack of *their* systems — the classic "exchange got hacked, users lost everything" story doesn't apply the same way.
 - **No account, no identity check.** Just a wallet and a transaction. Privacy is higher; so is personal responsibility.

@@ -16,7 +16,7 @@ Digital information has one weird property: it's endlessly copyable. If I send y
 
 In 2008, a person (or group) calling themselves Satoshi Nakamoto published a solution. The trick wasn't making digital coins un-copyable — it was making *spending the same coin twice* instantly visible to everyone. The mechanism: keep one shared record book, copied across thousands of independent computers, where every transaction is written publicly and permanently.
 
-Bitcoin was the first working version. Fifteen-plus years and trillions of dollars later, the same basic design runs everything in crypto.
+[Bitcoin](what-is-bitcoin-halving.html) was the first working version. Fifteen-plus years and trillions of dollars later, the same basic design runs everything in crypto.
 
 ## How it works, in four simple pieces
 
@@ -45,7 +45,7 @@ A blockchain replaces "trust this institution" with "verify this math." That ena
 
 Money was the first use, not the only one. The same shared-record design gets used for:
 
-- **Smart contracts** — programs that run on the blockchain, executing automatically when conditions are met (this is what Ethereum added, and what DeFi and NFTs are built from).
+- **Smart contracts** — programs that run on the blockchain, executing automatically when conditions are met (this is what Ethereum added, and what [DeFi](what-is-defi.html) and [NFTs](what-is-an-nft.html) are built from).
 - **Ownership records** — NFTs as certificates of authenticity, supply-chain tracking, land registries.
 - **Tokenization** — representing anything (stocks, property deeds, loyalty points) as a transferable blockchain token.
 

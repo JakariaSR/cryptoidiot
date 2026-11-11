@@ -28,7 +28,7 @@ Everything below is an application of that one principle. (One honest caveat: ru
 
 **3. Spending crypto on goods or services.** Buying that coffee disposes of crypto. If the coins appreciated since purchase, the appreciation is a taxable gain — yes, on a $6 latte. This is why most tax folks advise tracking spending carefully (and why stablecoins, which barely move in price, simplify day-to-day use).
 
-**4. Earning crypto.** Staking rewards, airdrops, income from play-to-earn or work paid in crypto — in many systems this counts as ordinary income at the value when received, *and then* any later gain when you sell counts as capital gains. Two taxable events from one reward.
+**4. Earning crypto.** [Staking rewards](what-is-staking.html), airdrops, income from play-to-earn or work paid in crypto — in many systems this counts as ordinary income at the value when received, *and then* any later gain when you sell counts as capital gains. Two taxable events from one reward.
 
 **What usually ISN'T taxable:** buying crypto with regular money and simply holding it. Moving coins between your own wallets also generally isn't a disposal — but keep records, because "transfer or taxable sale?" is exactly the question tax software answers for you.
 

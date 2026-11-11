@@ -47,7 +47,7 @@ That's very different from "guaranteed 20% yield" schemes, where your "interest"
 
 **3. Slashing.** If a validator misbehaves or goes offline, the network can destroy part of its stake. If you're staked through that validator, you share the loss. Quality pools make this rare, but it exists.
 
-**4. The taxes.** In most countries, staking rewards are taxable income the moment you receive them, and a capital gain/loss when you sell. Ten small reward deposits a month can become a spreadsheet nightmare — a tax tool pays for itself fast here.
+**4. The taxes.** In most countries, staking rewards are taxable income the moment you receive them, and a capital gain/loss when you sell. Ten small reward deposits a month can become a spreadsheet nightmare — our [crypto tax guide](crypto-taxes-for-beginners.html) covers exactly what to record and why.
 
 ## Staking vs. just holding
 
