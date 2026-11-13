@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proof of Work vs Proof of Stake: How Blockchains Stay Secure | Crypto Idiot</title>
+  <meta name="description" content="Bitcoin uses proof of work (mining); Ethereum switched to proof of stake (staking). Learn how each secures a blockchain, why the energy debate matters, and which is &quot;better.&quot;" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/#blog">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <span class="post-tag">Beginner</span>
+      <h1>Proof of Work vs Proof of Stake: How Blockchains Stay Secure | Crypto Idiot</h1>
+      <p class="article-meta">7 min read · Crypto Idiot Guides</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+<p>Every blockchain faces the same fundamental problem: thousands of strangers&#39; computers keep copies of the ledger — so what&#39;s to stop someone from cheating? The answer is a <strong>consensus mechanism</strong>: the rulebook for how the network agrees on what&#39;s true. There are two dominant designs, and you&#39;ve already met both without realizing it: proof of work is how Bitcoin is secured; proof of stake is how Ethereum is secured (and how <a href="what-is-staking.html">staking</a> pays you).</p>
+<h2>Proof of work: security through hard work (literally)</h2>
+<p>Proof of work was Bitcoin&#39;s original solution, and it&#39;s beautifully blunt. To add a new block to the chain, miners&#39; computers must solve an extremely hard mathematical puzzle — essentially, guess a number that produces a specific fingerprint. It&#39;s:</p>
+<ul>
+<li><strong>Hard to solve</strong> — trillions of guesses per second are needed; specialized hardware burns serious electricity.</li>
+<li><strong>Trivial to verify</strong> — once someone finds the answer, anyone can check it instantly.</li>
+</ul>
+<p>The first miner to solve the puzzle wins the right to add the next block and collect the reward (the new coins from <a href="what-is-bitcoin-halving.html">each halving era</a>, plus fees). To cheat — say, by rewriting an old transaction — an attacker would need to redo all that puzzle work faster than the honest majority, which would require controlling more computing power than the rest of the network combined. On Bitcoin, that means more computing power than most nations possess. That&#39;s the security: not locks, but crushing, expensive math.</p>
+<p>The cost is real too: proof of work famously consumes electricity at the scale of a medium-sized country, because security scales with energy spent.</p>
+<h2>Proof of stake: security through skin in the game</h2>
+<p>Proof of stake answers the same question with a different resource: instead of proving you burned electricity, you prove you have <strong>money locked in the system</strong>. Validators deposit a stake of coins (on Ethereum, 32 ETH) as a security bond, and the network chooses validators to create new blocks — weighted by stake.</p>
+<ul>
+<li><strong>Honesty pays:</strong> validators earn rewards for proposing and confirming blocks.</li>
+<li><strong>Cheating gets destroyed:</strong> if a validator tries to approve fraudulent transactions or goes offline, the network can <strong>slash</strong> — automatically burn — part of their stake. Attack the network, and your own money evaporates.</li>
+</ul>
+<p>This is the same lock-up mechanism behind staking: when you stake through a pool, you&#39;re participating in exactly this security system. The incentives replace the energy: instead of making attacks physically expensive (electricity), proof of stake makes them financially suicidal.</p>
+<h2>Head-to-head</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Proof of work (Bitcoin)</th>
+<th>Proof of stake (Ethereum)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Security resource</strong></td>
+<td>Computing power + electricity</td>
+<td>Locked coins (stake)</td>
+</tr>
+<tr>
+<td><strong>Who adds blocks</strong></td>
+<td>Miners (competition)</td>
+<td>Validators (chosen by stake)</td>
+</tr>
+<tr>
+<td><strong>Attack cost</strong></td>
+<td>&gt;50% of global hash power — enormous energy/hardware</td>
+<td>&gt;33% of all staked coins — billions of dollars</td>
+</tr>
+<tr>
+<td><strong>Penalty for cheating</strong></td>
+<td>Wasted electricity; attack fails expensively</td>
+<td>Slashing — stake is burned</td>
+</tr>
+<tr>
+<td><strong>Energy use</strong></td>
+<td>Very high (Bitcoin-scale)</td>
+<td>~99.9% lower</td>
+</tr>
+<tr>
+<td><strong>Centralization pressure</strong></td>
+<td>Mining pools; hardware manufacturers</td>
+<td>Large staking pools; exchange staking</td>
+</tr>
+</tbody></table>
+<h2>The honest &quot;which is better&quot; answer</h2>
+<p>You&#39;ll find religious wars about this. The boring truth:</p>
+<ul>
+<li><strong>Proof of work</strong> has the longest track record (since 2009) and arguably the simplest, most battle-tested security model. Its energy cost is a feature to some (hard to attack) and a bug to others (environmental, scaling).</li>
+<li><strong>Proof of stake</strong> is vastly more energy-efficient and enables things proof of work can&#39;t do well — faster blocks, lower issuance, and easy participation for regular holders. Its trade-off: security depends on the distribution of stake, and its history is shorter (Ethereum switched in 2022, an event called &quot;The Merge&quot;).</li>
+</ul>
+<p>Both have now secured trillions of dollars of value in the real world. Neither has suffered a successful history rewrite — which, for consensus mechanisms, is the only exam that matters.</p>
+<div class="callout"><b>What this means for you:</b> practically, the consensus mechanism decides <b>how you can earn</b>. Proof-of-work coins (Bitcoin) can't be staked — the only way to acquire them is to buy or mine. Proof-of-stake coins (ETH, SOL, ADA…) can be staked for rewards, with the lock-up and slashing risks covered in our staking guide.</div><h2>The one-paragraph version</h2>
+<p>Proof of work and proof of stake are two answers to the same question — how do thousands of strangers agree on a shared record without trusting anyone — and both work by making cheating ruinously expensive. Proof of work (Bitcoin) has miners burn electricity solving puzzles; rewriting history would require out-computing the entire honest network. Proof of stake (Ethereum) has validators lock up coins as a bond; cheating triggers automatic destruction of that stake, so attacking means destroying your own fortune. Work is battle-tested and energy-hungry; stake is ~99.9% more efficient and younger. Both have secured real value at global scale, and the choice matters mainly for how you participate: you can only stake proof-of-stake coins, while proof-of-work coins you simply buy and hold.</p>
+<p><strong>Next guide:</strong> both mechanisms face the same ceiling — one blockchain can only process so much. The industry&#39;s answer to that ceiling is one of the most important ideas in modern crypto: <a href="what-is-a-layer-2.html">Layer 2 networks</a>.</p>
+
+
+    <div class="article-nav">
+      <a href="/blog/">← All posts</a>
+      <a href="what-is-a-layer-2.html">Next: What is a Layer 2? →</a>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

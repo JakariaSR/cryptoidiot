@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is a Layer 2? Scaling Blockchains Without Breaking Them | Crypto Idiot</title>
+  <meta name="description" content="Layer 2 networks like Arbitrum and Base make Ethereum cheap and fast by processing transactions off the main chain. Learn how they work and when to use one." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/#blog">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <span class="post-tag">Beginner</span>
+      <h1>What Is a Layer 2? Scaling Blockchains Without Breaking Them | Crypto Idiot</h1>
+      <p class="article-meta">7 min read · Crypto Idiot Guides</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+<p>Here&#39;s crypto&#39;s scaling dilemma in one sentence: <strong>blockchains are slow by design — deliberately — and that slowness is exactly what makes them secure.</strong> Ethereum processes roughly a dozen transactions per second; a busy payment network does thousands. You met the symptom already: <a href="what-is-gas-fee.html">gas fees</a> spike precisely because block space is scarce. The industry&#39;s most successful answer to that dilemma is the <strong>Layer 2: a network that sits on top of a main blockchain, processes transactions cheaply at scale, and borrows the main chain&#39;s security to guarantee honesty.</strong></p>
+<h2>Layer 1 vs Layer 2: the highway and the express lane</h2>
+<p>Think of Ethereum itself — the &quot;Layer 1&quot; — as a narrow, extremely well-guarded highway. Every transaction is a car that pays a toll (<a href="what-is-gas-fee.html">gas</a>) to use it. Safe, but small and expensive at rush hour.</p>
+<p>A Layer 2 is an express lane built alongside it:</p>
+<ul>
+<li><strong>It handles the traffic.</strong> Thousands of transactions happen on the Layer 2, priced in cents instead of dollars.</li>
+<li><strong>It anchors to the highway.</strong> The Layer 2 regularly bundles its activity and posts a compressed summary back to Ethereum — inheriting Ethereum&#39;s security for everything it processed.</li>
+<li><strong>You can always exit.</strong> If the Layer 2&#39;s operators vanished, users could retrieve their funds through Ethereum itself. The express lane can&#39;t steal what&#39;s on the highway.</li>
+</ul>
+<p>The result: most of the activity, a tiny fraction of the cost, and — critically — no need to trust a new, weaker blockchain.</p>
+<h2>Where you&#39;ve already seen this working</h2>
+<p>Layer 2s stopped being theoretical years ago; billions of dollars move through them daily:</p>
+<ul>
+<li><strong>Arbitrum</strong> — the largest, built for general apps and DeFi.</li>
+<li><strong>Base</strong> — backed by Coinbase, focused on being simple for apps and everyday users.</li>
+<li><strong>Optimism</strong> — a close sibling of Arbitrum&#39;s design, with a growing ecosystem of its own.</li>
+<li><strong>zk-rollups</strong> (like zkSync, Starknet) — a more mathematically intense design that settles even faster.</li>
+</ul>
+<p>For a beginner, the names matter less than the pattern: <strong>moving coins to a Layer 2 can cut fees by 95%+</strong>, and most new apps launch there first because it&#39;s where users can actually afford to use them.</p>
+<h2>How to actually use a Layer 2 (and the catches)</h2>
+<p>Mechanically, it looks like this:</p>
+<ol>
+<li><strong>Bridge your coins.</strong> Use an official bridge to move ETH (or stablecoins) from Ethereum to the Layer 2. This first step is a main-chain transaction — so it pays main-chain gas. Moving $500 might cost a few dollars in fees, which the Layer 2&#39;s cheap transactions then amortize.</li>
+<li><strong>Do your activity there.</strong> Swaps, DeFi, NFTs — all priced in cents, settled in seconds.</li>
+<li><strong>Bridge back if needed.</strong> Another main-chain transaction when you return to Ethereum.</li>
+</ol>
+<p>The catches, stated honestly:</p>
+<ul>
+<li><strong>Bridging has costs and delays.</strong> The initial move isn&#39;t free, and withdrawal back to the main chain can take days on some designs (faster, paid &quot;fast exits&quot; exist).</li>
+<li><strong>Scams live where the users are.</strong> Fake bridge websites are a top phishing trap — always reach the bridge through the project&#39;s official site, never a search ad or a Discord link.</li>
+<li><strong>Each Layer 2 is its own network.</strong> Your wallet needs the right network settings, and sending coins to the wrong network can strand them (recoverable, but annoying).</li>
+</ul>
+<div class="callout"><b>When it's worth it:</b> one main-chain swap = Layer 2's bridging cost. If you'll make several transactions, the Layer 2 wins decisively. If you're buying once and holding for a year, the main chain (or just leaving coins on an exchange) is simpler. Layer 2s reward <b>activity</b>, not inactivity.</div><h2>Why this matters for the future</h2>
+<p>Layer 2s are arguably the industry&#39;s most important bet: keep the main blockchain maximally secure and decentralized, and push the traffic onto layers that inherit that security while scaling freely. If the bet works, users never need to think about which layer they&#39;re on — apps will route activity automatically, the same way you don&#39;t think about which data center a website uses.</p>
+<p>For now, you just need the mental model: <strong>Layer 1 = the guarded vault. Layer 2 = the fast lane that reports to the vault.</strong> Cheap, fast activity on the lane; final safety in the vault.</p>
+<h2>The one-paragraph version</h2>
+<p>A Layer 2 is a network that processes blockchain transactions cheaply at high volume, then anchors summaries of that activity to a main chain like Ethereum so it inherits the main chain&#39;s security — solving the dilemma that blockchains are slow and expensive precisely because they&#39;re secure. Major examples like Arbitrum, Base, and Optimism cut typical fees by 95% or more, and most new apps launch there first. Using one means bridging coins over (a main-chain fee), transacting cheaply, and bridging back when needed — with honest catches: bridging costs time and money, fake bridge sites are a leading phishing trap, and each network needs the right wallet settings. The model to remember is a highway and its express lane: the express lane handles the traffic, the highway guarantees nobody cheats.</p>
+<p><strong>Next guide:</strong> cheap and fast networks changed what kinds of coins can exist — including the kind that exist purely because a joke was funny. Welcome to <a href="what-is-a-meme-coin.html">meme coins: how they work and why they&#39;re dangerous</a>.</p>
+
+
+    <div class="article-nav">
+      <a href="/blog/">← All posts</a>
+      <a href="what-is-a-meme-coin.html">Next: What is a meme coin? →</a>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

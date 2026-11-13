@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cryptoidiot.com/</loc><lastmod>2026-11-11</lastmod><priority>1.0</priority></url>
-  <url><loc>https://cryptoidiot.com/blog/</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/crypto-converter.html</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/dca-calculator.html</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/bitcoin-halving-countdown.html</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/fear-greed-index.html</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/sats-converter.html</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/eth-unit-converter.html</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/profit-loss-calculator.html</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/staking-apy-calculator.html</loc><lastmod>2026-11-11</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/</loc><lastmod>2026-11-13</lastmod><priority>1.0</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/crypto-converter.html</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/dca-calculator.html</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/bitcoin-halving-countdown.html</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/fear-greed-index.html</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/sats-converter.html</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/eth-unit-converter.html</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/profit-loss-calculator.html</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/staking-apy-calculator.html</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
   <url><loc>https://cryptoidiot.com/blog/common-crypto-scams.html</loc><lastmod>2026-10-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://cryptoidiot.com/blog/how-to-buy-your-first-crypto.html</loc><lastmod>2026-10-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://cryptoidiot.com/blog/what-is-a-crypto-wallet.html</loc><lastmod>2026-10-31</lastmod><priority>0.8</priority></url>
@@ -29,4 +29,10 @@
   <url><loc>https://cryptoidiot.com/blog/crypto-taxes-for-beginners.html</loc><lastmod>2026-11-11</lastmod><priority>0.8</priority></url>
   <url><loc>https://cryptoidiot.com/blog/what-is-a-blockchain.html</loc><lastmod>2026-11-11</lastmod><priority>0.8</priority></url>
   <url><loc>https://cryptoidiot.com/blog/what-is-defi.html</loc><lastmod>2026-11-11</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/bitcoin-vs-ethereum.html</loc><lastmod>2026-11-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/idiots-guide-to-bitcoin.html</loc><lastmod>2026-11-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/lost-seed-phrase-what-happens.html</loc><lastmod>2026-11-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-a-layer-2.html</loc><lastmod>2026-11-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-a-meme-coin.html</loc><lastmod>2026-11-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-proof-of-work.html</loc><lastmod>2026-11-13</lastmod><priority>0.8</priority></url>
 </urlset>
