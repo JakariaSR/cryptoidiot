@@ -4,8 +4,8 @@ description: Lost your seed phrase with no backup? Here's exactly what happens â
 tag: Safety
 readtime: 6 min read
 date: 2026-11-13
-next_title: What is a crypto wallet?
-next_url: what-is-a-crypto-wallet.html
+next_title: How to cash out crypto
+next_url: how-to-cash-out-crypto.html
 ---
 
 It happens in a hundred ways. A house fire took the paper. A "helpful" cleanup threw out the notebook. The phone with the photo broke â€” and yes, the photo was a terrible idea anyway. The water heater flooded the desk drawer. Now the wallet app is asking for the [seed phrase](what-is-a-seed-phrase.html) you no longer have, and the question arrives cold: **what actually happens if your seed phrase is gone?**
