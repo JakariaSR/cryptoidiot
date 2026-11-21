@@ -4,8 +4,8 @@ description: A plain-English crypto glossary: 45 terms every beginner needs — 
 tag: Guide
 readtime: 12 min read
 date: 2026-11-17
-next_title: What is a crypto wallet?
-next_url: what-is-a-crypto-wallet.html
+next_title: Hot wallet vs cold wallet
+next_url: hot-wallet-vs-cold-wallet.html
 ---
 
 Crypto has a vocabulary problem: the industry loves jargon, and most explanations online assume you already know half of it. This glossary fixes that. **Forty-five terms, each defined in plain English, with links to full guides wherever we have one.** Skim it, bookmark it, and never nod along to a word you don't understand again.
@@ -164,4 +164,4 @@ Crypto has a vocabulary problem: the industry loves jargon, and most explanation
 
 You now hold the decoding ring: coins run their own blockchains while tokens ride on someone else's; wallets hold keys, not coins, with the seed phrase as master backup and the private key as the single secret that moves everything; exchanges are either companies holding your coins (CEX) or software letting you keep them (DEX); and the industry's whole economy — from stablecoins and staking to DeFi and NFTs — is built from smart contracts running on blockchains secured by proof of work or proof of stake. The jargon never stops coming, but it always reduces to a handful of ideas, and you now own all of them.
 
-**Next guide:** everything in this glossary ultimately operates through one tool. Here's that tool from the ground up: [what a crypto wallet actually is](what-is-a-crypto-wallet.html).
+**Next guide:** everything in this glossary ultimately lives in one of two kinds of storage. Time to learn the difference: [hot wallet vs cold wallet](hot-wallet-vs-cold-wallet.html).
