@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is Bitcoin Mining? The Engine That Runs the Whole Thing | Crypto Idiot</title>
+  <meta name="description" content="What Bitcoin mining actually is, why miners exist, what proof of work does, and why mining uses so much electricity — explained without the jargon." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/#blog">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <span class="post-tag">Basics</span>
+      <h1>What Is Bitcoin Mining? The Engine That Runs the Whole Thing | Crypto Idiot</h1>
+      <p class="article-meta">6 min read · Crypto Idiot Guides</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+<p>You&#39;ve heard the headline version: &quot;computers solving puzzles, burning electricity, earning digital money.&quot; It sounds absurd, and parts of it genuinely are strange — but mining isn&#39;t a gimmick. It&#39;s the engine that keeps Bitcoin running, secures every transaction, and answers the question &quot;who gets to update the ledger?&quot; without any boss. Here&#39;s how it actually works.</p>
+<h2>The problem mining solves</h2>
+<p>Bitcoin is a ledger copied across thousands of computers worldwide. That raises an obvious question: <strong>when two computers disagree about what happened, who wins?</strong> In a bank, the answer is easy — the bank&#39;s server is the truth. Bitcoin has no server. It needs a way to make cheating astronomically expensive and honest participation profitable.</p>
+<p>Mining is that mechanism, and it works like a lottery where the tickets are computing power.</p>
+<h2>What miners actually do</h2>
+<p>Miners gather pending transactions into a &quot;block,&quot; then race to solve a math puzzle tied to that block. The puzzle isn&#39;t useful math — it&#39;s a deliberately hard guessing game (a hash below a target number) that can only be solved by brute-force tries, billions per second. The first miner to solve it:</p>
+<ol>
+<li><strong>Broadcasts their block</strong> to the network</li>
+<li><strong>Earns the reward</strong> — new bitcoins (the &quot;block subsidy,&quot; halved roughly every four years, see <a href="what-is-bitcoin-halving.html">bitcoin halving</a>) plus the transaction fees in that block</li>
+</ol>
+<p>Everyone else verifies the solution (easy to check, brutal to find), adds the block to their copy of the <a href="what-is-a-blockchain.html">blockchain</a>, and starts the next race. Roughly every ten minutes, forever, a new block.</p>
+<h2>Why it secures the network</h2>
+<p>This is the part headlines skip. The puzzle&#39;s difficulty isn&#39;t arbitrary — it&#39;s what makes attacking Bitcoin irrational. To cheat (say, spending the same coins twice), an attacker would need to redo the mining work on their fake version of history <strong>faster than the entire honest network combined</strong> — while the honest chain keeps growing. That&#39;s the substance behind <a href="what-is-proof-of-work.html">proof of work</a> and why <a href="can-bitcoin-be-hacked.html">can Bitcoin be hacked</a> has its two-part answer: rewriting the ledger costs billions in hardware and electricity with near-zero chance of success.</p>
+<p>The energy isn&#39;t a bug Bitcoin forgot to fix; it&#39;s the price of making the ledger unforgeable. More mining power = more security = harder to attack.</p>
+<h2>The economics in plain terms</h2>
+<p>Miners are businesses. They pay for electricity, hardware (specialized machines called ASICs), and cooling — and earn bitcoin that must cover those costs. That equation explains almost everything about mining:</p>
+<ul>
+<li>Miners hunt the <strong>cheapest electricity on earth</strong> — stranded gas, hydro overflow, wind-rich regions — because a cent per kilowatt-hour is the whole ballgame</li>
+<li>When Bitcoin&#39;s price falls, the least efficient miners shut off; the network automatically adjusts difficulty down so blocks keep coming every ~10 minutes</li>
+<li>It&#39;s ruthlessly competitive and thin-margin, which is why &quot;should I mine Bitcoin on my laptop?&quot; has a one-word answer: <strong>no</strong>. Consumer hardware lost that race around 2013.</li>
+</ul>
+<h2>What mining means for you (a regular user)</h2>
+<ul>
+<li>Mining is <strong>not how you get bitcoin</strong> — that&#39;s <a href="how-to-buy-your-first-crypto.html">buying</a>, earning, or DCA. Mining is an industrial business, not a hobby.</li>
+<li>Miners&#39; fees are part of why Bitcoin transactions cost what they do at busy times — related to, but distinct from <a href="what-is-gas-fee.html">gas fees</a> on other networks.</li>
+<li>The &quot;wasted energy&quot; debate deserves the honest nuance from <a href="crypto-myths-debunked.html">crypto myths debunked</a> — the question is real, and so is the counterargument.</li>
+</ul>
+<h2>The one-paragraph version</h2>
+<p>Bitcoin mining is a global competition where specialized computers race to solve a brute-force math puzzle; the winner adds the next block of transactions to the blockchain and earns new bitcoins plus fees, roughly every ten minutes. Its real purpose isn&#39;t creating coins — it&#39;s security: the computing work makes rewriting Bitcoin&#39;s history require out-spending the entire honest network, which is what keeps the ledger trustworthy without any central authority. The electricity use is the deliberate cost of that security, which is why miners cluster wherever power is cheapest and why the &quot;is it worth it?&quot; question is an industrial economics problem, not a laptop one. For ordinary users, mining matters as background — the reason your transactions are final, not as a way to earn.</p>
+<p><strong>Next guide:</strong> mining secures a ledger that only records transactions. But what if the ledger could run programs? That&#39;s the idea that built Ethereum — and it&#39;s the most important concept in crypto after the blockchain itself: <a href="what-is-a-smart-contract.html">what is a smart contract?</a>.</p>
+
+
+    <div class="article-nav">
+      <a href="/blog/">← All posts</a>
+      <a href="what-is-a-smart-contract.html">Next: What is a smart contract? →</a>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

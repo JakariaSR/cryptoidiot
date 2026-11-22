@@ -4,8 +4,8 @@ description: Ten of the most persistent crypto myths, debunked honestly — from
 tag: Basics
 readtime: 8 min read
 date: 2026-11-21
-next_title: What is a crypto wallet?
-next_url: what-is-a-crypto-wallet.html
+next_title: What is Bitcoin mining?
+next_url: what-is-bitcoin-mining.html
 ---
 
 Crypto has a unique talent: it's been around long enough to generate strong opinions, but weird enough that most of those opinions come from headlines rather than use. The result is a pile of myths that are each about 20% true — which is exactly what makes them sticky. Let's take on the ten biggest, with the honesty the subject deserves (including admitting where the myths have a point).
@@ -54,4 +54,4 @@ Crypto has a unique talent: it's been around long enough to generate strong opin
 
 The biggest crypto myths survive by being a fifth true: scams are rampant in crypto but the major networks aren't scams themselves; Bitcoin is bad for some crimes but its public ledger makes it terrible for hiding them; you don't need wealth or tech skills to start — you need a few safety habits; the environmental question deserves nuance, not slogans; crypto is pseudonymous, not anonymous; Bitcoin's moat is survival, not features; price predictions in either direction are entertainment, not planning; missing the boat has been wrongly declared annually since 2011; theft risk is real but mostly self-inflicted and preventable; and mainstream adoption doesn't require understanding the tech — it requires tools simple enough that responsibility, not complexity, is the real remaining skill. Believe less, verify more, and size your bets so that being wrong is survivable.
 
-**Next guide:** that's the batch — now go back to where self-custody starts, or forward into the wallet deep-dive: [what is a crypto wallet?](what-is-a-crypto-wallet.html).
+**Next guide:** myths cleared — now the machinery. Here's the engine that secures everything: [what is Bitcoin mining?](what-is-bitcoin-mining.html).

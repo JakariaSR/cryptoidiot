@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is Slippage? The Hidden Cost in Every Crypto Trade | Crypto Idiot</title>
+  <meta name="description" content="What slippage is in crypto trading, why your trade never fills at exactly the price you saw, how to set slippage tolerance, and how to avoid getting sandwiched." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤓</text></svg>" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6GJPEWWKK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G6GJPEWWKK');
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">crypto<span class="accent">idiot</span><span class="dot">.com</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="/#tools">Tools</a>
+        <a href="/#learn">Learn</a>
+        <a href="/#blog">Blog</a>
+        <a href="/#newsletter" class="nav-cta">Start Here</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="container">
+      <span class="post-tag">Basics</span>
+      <h1>What Is Slippage? The Hidden Cost in Every Crypto Trade | Crypto Idiot</h1>
+      <p class="article-meta">6 min read · Crypto Idiot Guides</p>
+    </div>
+  </section>
+
+  <article class="article-body">
+<p>You click buy at exactly $100.00. The trade confirms. Your average price: $100.70. You just met <strong>slippage</strong> — the small (sometimes not-so-small) gap between the price you expected and the price you actually got. It&#39;s the most common hidden cost in crypto, it shows up most on the apps beginners love, and understanding it takes about five minutes.</p>
+<h2>Why trades never fill at exactly the displayed price</h2>
+<p>The price you see on screen is the <em>last</em> trade&#39;s price — history. The price you&#39;ll get is determined by the <strong>order book</strong> — the standing offers from other people, right now. If your order is bigger than what&#39;s resting at the top of the book, you eat through it layer by layer, and each layer costs a little more (when buying) or pays a little less (when selling).</p>
+<p>That &quot;eating through the book&quot; is slippage, and its size depends on exactly one thing we just covered in depth: <a href="what-is-liquidity.html">liquidity</a>. Deep market (Bitcoin) = the book has oceans of offers = your $500 barely dents it = slippage measured in pennies. Thin market (a new token) = the book is a puddle = your $500 sweeps multiple price levels = slippage of several percent. Same trade, different pool. And if you choose <a href="market-order-vs-limit-order.html">market orders</a> on a thin book, you&#39;re paying the maximum possible toll — that&#39;s the mechanical reason limit orders are the better default.</p>
+<h2>Slippage tolerance: the setting that confuses everyone</h2>
+<p>On decentralized exchanges (the <a href="cex-vs-dex.html">DEX</a> half of crypto trading), you don&#39;t see an order book — the app routes your trade through a &quot;liquidity pool&quot; and asks you for one number: <strong>slippage tolerance.</strong> It means &quot;if my final price is worse than expected by more than X%, cancel the trade automatically.&quot;</p>
+<p>Typical defaults: 0.5–1% for major coins, higher for thin ones. Now here&#39;s the part that matters: <strong>a high tolerance isn&#39;t just permission for a bad price — it&#39;s an invitation for a specific attack.</strong></p>
+<h3>The sandwich attack, in plain terms</h3>
+<p>Some bots scan the blockchain for pending trades with generous slippage tolerance. When they spot your buy with, say, 5% tolerance, they do this in one automated flash:</p>
+<ol>
+<li>Buy just before you (pushing the price up)</li>
+<li>Let your trade execute — you&#39;re now forced to accept a price up to 5% worse, per your own setting</li>
+<li>Sell immediately after you (locking in their profit from <em>your</em> bad fill)</li>
+</ol>
+<p>Your buy got sandwiched. You lost a few percent to a robot who added nothing but extraction. This happens daily on decentralized exchanges, targets exactly the people least likely to know it exists, and the defense is embarrassingly simple: <strong>set the lowest slippage tolerance your trade allows.</strong> Start at 0.5%. If the trade fails for being too tight, nudge it up gradually — never start generous. Failed trades cost a small network fee; sandwiches cost real money.</p>
+<h2>How to keep slippage small</h2>
+<ul>
+<li><strong>Trade liquid pairs.</strong> The majors on major exchanges are where price integrity actually lives (see <a href="how-to-choose-a-crypto-exchange.html">choosing an exchange</a> and why volume matters).</li>
+<li><strong>Use limit orders on order-book venues.</strong> A limit order has zero slippage by design — no fill, no trade; fill, your price.</li>
+<li><strong>Split large orders.</strong> One $5,000 market order slips more than five $1,000 orders over minutes (though mind the fees).</li>
+<li><strong>Avoid trading during chaos.</strong> In the first minutes of a panic, spreads explode and <a href="what-is-liquidity.html">liquidity</a> evaporates — slippage is worst exactly when emotion is highest (<a href="what-is-fomo-and-fud.html">FOMO and FUD</a> again — the same emotions, taxing you twice).</li>
+<li><strong>On DEXs: lowest workable tolerance, always.</strong> See above — this one setting is the whole defense against sandwiches.</li>
+<li><strong>Sanity-check before confirming.</strong> Most good apps show you the expected fill (&quot;min received: 995 USDC&quot;). If that number is noticeably below what you typed, slippage is already warning you — believe it.</li>
+</ul>
+<h2>Slippage vs fees vs spread — the three tolls</h2>
+<p>Beginners often conflate the three ways a trade gets taxed; they&#39;re distinct:</p>
+<ul>
+<li><strong>Fee:</strong> the exchange&#39;s explicit commission, stated upfront.</li>
+<li><strong>Spread:</strong> the standing gap between best buy and sell offers — the market&#39;s always-on toll.</li>
+<li><strong>Slippage:</strong> the <em>extra</em> cost created by <em>your</em> trade moving through the book, or being extracted in a sandwich.</li>
+</ul>
+<p>A trade can have low fees, tight spreads, and still bleed slippage on a big order. The receipt that matters is the <em>effective</em> price: what you actually paid per unit, all costs in. If that number keeps surprising you, the fix isn&#39;t a better exchange — it&#39;s smaller orders, limit orders, calmer timing.</p>
+<h2>The one-paragraph version</h2>
+<p>Slippage is the gap between the price you expect and the price you actually get, caused by your order consuming the available offers in an order book or liquidity pool — small on deep markets like Bitcoin and potentially large on thin ones, with the size set almost entirely by liquidity. On decentralized exchanges, your slippage tolerance setting is a security parameter: set it too high and automated sandwich bots can detect your pending trade, push the price against you, and extract the difference in one transaction. Keep slippage small by trading liquid pairs, preferring limit orders, splitting large orders, avoiding panic moments, and setting the lowest tolerance that lets trades complete — and judge every trade by its effective price after fees, spread, and slippage, not the pretty number on the chart.</p>
+<p><strong>Next guide:</strong> that completes this batch — and with buying, holding, securing, and trading all covered, the natural next stop is the foundation everything rests on: <a href="what-is-a-crypto-wallet.html">what is a crypto wallet?</a>.</p>
+
+
+    <div class="article-nav">
+      <a href="/blog/">← All posts</a>
+      <a href="what-is-a-crypto-wallet.html">Next: What is a crypto wallet? →</a>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 CryptoIdiot.com — Not financial advice, obviously.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

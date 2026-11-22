@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://cryptoidiot.com/</loc><lastmod>2026-11-21</lastmod><priority>1.0</priority></url>
-  <url><loc>https://cryptoidiot.com/blog/</loc><lastmod>2026-11-21</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/crypto-converter.html</loc><lastmod>2026-11-21</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/dca-calculator.html</loc><lastmod>2026-11-21</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/bitcoin-halving-countdown.html</loc><lastmod>2026-11-21</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/fear-greed-index.html</loc><lastmod>2026-11-21</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/sats-converter.html</loc><lastmod>2026-11-21</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/eth-unit-converter.html</loc><lastmod>2026-11-21</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/profit-loss-calculator.html</loc><lastmod>2026-11-21</lastmod><priority>0.9</priority></url>
-  <url><loc>https://cryptoidiot.com/tools/staking-apy-calculator.html</loc><lastmod>2026-11-21</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/</loc><lastmod>2026-11-22</lastmod><priority>1.0</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/crypto-converter.html</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/dca-calculator.html</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/bitcoin-halving-countdown.html</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/fear-greed-index.html</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/sats-converter.html</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/eth-unit-converter.html</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/profit-loss-calculator.html</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
+  <url><loc>https://cryptoidiot.com/tools/staking-apy-calculator.html</loc><lastmod>2026-11-22</lastmod><priority>0.9</priority></url>
   <url><loc>https://cryptoidiot.com/blog/common-crypto-scams.html</loc><lastmod>2026-10-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://cryptoidiot.com/blog/how-to-buy-your-first-crypto.html</loc><lastmod>2026-10-31</lastmod><priority>0.8</priority></url>
   <url><loc>https://cryptoidiot.com/blog/what-is-a-crypto-wallet.html</loc><lastmod>2026-10-31</lastmod><priority>0.8</priority></url>
@@ -57,4 +57,14 @@
   <url><loc>https://cryptoidiot.com/blog/what-is-a-hardware-wallet.html</loc><lastmod>2026-11-21</lastmod><priority>0.8</priority></url>
   <url><loc>https://cryptoidiot.com/blog/what-is-apy-and-apr.html</loc><lastmod>2026-11-21</lastmod><priority>0.8</priority></url>
   <url><loc>https://cryptoidiot.com/blog/what-is-ethereum.html</loc><lastmod>2026-11-21</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/crypto-vs-stocks.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/how-to-read-a-whitepaper.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-a-smart-contract.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-a-whale.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-bitcoin-mining.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-fiat-currency.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-fomo-and-fud.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-hodl.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-liquidity.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
+  <url><loc>https://cryptoidiot.com/blog/what-is-slippage.html</loc><lastmod>2026-11-22</lastmod><priority>0.8</priority></url>
 </urlset>
